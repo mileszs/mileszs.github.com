@@ -249,6 +249,8 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.12)
+  jekyll-paginate (~> 1.1)
+  jekyll-seo-tag (~> 2.5)
   tale
 
 BUNDLED WITH
