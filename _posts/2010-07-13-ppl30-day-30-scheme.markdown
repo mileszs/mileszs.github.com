@@ -1,0 +1,68 @@
+---
+layout:     post
+title:      "PPL30 Day 30: Scheme"
+alias: /blog/2010/07/13/ppl30-day-30-scheme.html
+date: 2010-07-13 21:19
+categories: [ppl30, programming]
+---
+
+On the final day, I will be diving in to Scheme. My goals are mostly to get an environment in which to work with Scheme running, and learn what little syntax there is. I'm certainly not planning to complete SICP, or even The Little Schemer, today.
+
+<em><small>This is part of the Peer Pressure Learning 30 series. To learn more about what in the hell that means, see the intro to the series, [A Good Time To Learn](http://mileszs.com/blog/2010/06/13/a-good-time-to-learn.html).</small></em>
+
+## Installation ##
+
+PLT Scheme is now _Racket_, more or less, so DrScheme is now DrRacket. Racket is, essentially, a development environment in and of itself. Visit [Racket's website](http://racket-lang.org/) and download the appropriate package for your OS. When you run DrRacket, you get an interactive environment with both a text editor and a REPL, in a minimalist IDE interface.
+
+## Resources ##
+
+### Racket Docs ###
+
+Why not start with [the Racket docs](http://docs.racket-lang.org/)? In particular, though it sounds like Scheme Kindergarten, [An Introduction to Racket with Pictures](http://docs.racket-lang.org/quick/index.html) is a good read. It's admittedly a bit fun to be writing Scheme that draws pictures, too.
+
+There are several other resources available on [the Racket docs index](http://docs.racket-lang.org/). In particular, the Racketeers (Listen: I didn't make that up. That's what they call themselves) recommend [How to Design Programs](http://www.htdp.org/), suggesting it's essentially required reading. ... I didn't read it, yet.
+
+### Teach Yourself Scheme in Fixnum Days ###
+
+I found the online book [Teach Yourself Scheme in Fixnum Days](http://www.ccs.neu.edu/home/dorai/t-y-scheme/t-y-scheme-Z-H-1.html), and instantly knew that I had to include it here and at least skim it. I came to this conclusion based mostly on the name. I'm completely unashamed to admit that.
+
+In my defense, I did see it recommended by several other Lispers, though I did not hear anything specific from any Racketeers.
+
+![racketeers](/images/racketeers.jpg "I just assume all Racket scheme programmers are low-level mob bosses")
+
+## What I Think I Now Know ##
+
+Not enough. I don't know enough. I know that I find Lisp very interesting. So far, Scheme registers with me quicker and easier than Clojure did, as far as I can remember. It seems clearer, and more concise.
+
+Already, recursion has found an explicit way into my FizzBuzz:
+
+``` scheme
+(define (say-fizz)
+  (display "Fizz"))
+(define (say-buzz)
+  (display "Buzz"))
+(define (fizzbuzz n)
+  (cond ((eqv? (modulo n 15) 0) "Fizz")
+        ((eqv? (modulo n 3) 0) "Buzz")
+        ((eqv? (modulo n 5) 0) "FizzBuzz")
+        (else (display (number->string n)))))
+
+(let from-one-hundred ((i 100))
+  (if (= i 0) 'done
+    (begin
+      (display (fizzbuzz i))
+      (newline)
+      (from-one-hundred (- i 1)))))
+```
+
+The above FizzBuzz implementation isn't perfect, I know. Feel free to add a better implementation in the comments. You will be doing me a favor!
+
+Racket is an interesting environment in which to develop. I can't say I really loved it, but it was an interesting change of pace. I'd prefer to use my trusty Vim, of course!
+
+I think I would learn a lot from spending some time with _The Little Schemer_, or one of the various other recommended Lisp tomes. (I'm still not sure I have the patience for SICP.) I think _The Little Schemer_ will definitely be within the next few programming-related books I read. Right after I finish K&R. (Finally.)
+
+I recommend, if you've not worked with Lisp at all, giving Scheme (and Racket) a shot. The two resources I mentioned above, [Teach Yourself Scheme in Fixnum Days](http://www.ccs.neu.edu/home/dorai/t-y-scheme/t-y-scheme-Z-H-1.html), and [the Racket docs](http://docs.racket-lang.org/), really were quite helpful, I thought. Start there! Learn something new today!
+
+* * *
+
+Wow. I'm done! I'll do a recap this weekend, when I've recovered from PPL30 hangover.

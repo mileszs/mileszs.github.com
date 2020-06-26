@@ -1,0 +1,43 @@
+---
+title: "PPL30 Day 27: Emacs"
+layout: post
+alias: /blog/2010/07/10/ppl30-day-27-emacs.html
+date: 2010-07-10 23:44
+categories: [ppl30, programming]
+---
+
+Today I'm risking the label of traitor to try my hand (which I expect will be sore following this exercise) at Emacs.
+
+![warning to traitors](/images/traitor.gif "I'm not a traitor! It's recon! IT IS RECON!")
+
+## Installation ##
+
+    brew install emacs
+
+I initially installed the version from [emacsformacosx.com](http://emacsformacosx.com/), and decided to stick with it, as it seems to work fine. Feel free to leave a comment as to why I should switch!
+
+## Resources ##
+
+### The Emacs Tutorial ###
+
+Open emacs, and then type:
+
+    C-h t
+
+### The Emacs Starter Kit ###
+
+I installed [the Emacs Starter Kit](http://github.com/technomancy/emacs-starter-kit) to help myself get up and running quickly. It includes modes for ruby, perl, lisp, javascript, and many, many others. I recommend, if you're just getting started, starting with the Emacs Starter Kit.
+
+## What I Think I Now Know ##
+
+The tutorial, while quite helpful, served mostly to temporarily train my fingers to navigate Emacs, overcoming, however briefly, their natural Vim bindings. There is much more to Emacs. I've not touched elisp, nor really dove into configuring Emacs to my preferences.
+
+I did notice that, as I followed the tutorial, I was doing a lot of opening Vim to ensure I did, in fact, know how to accomplish the same things in Vim. This exercise has been helpful for my Vim skills! One probably trivial thing that I appreciated about Emacs is the ability to scroll a split window while focused on another. I can see that being quite useful.
+
+I think I might use Emacs when learning Scheme in a couple days, as well as in the future when using clojure, as I hear that it's all but a requirement. I hear there's some sort of covert kidnapping, followed by ceremonious torture, if one writes a significant amount of Lisp without using Emacs.
+
+_Update: I later -- much later -- spent significantly more time using Emacs. See ["Force Feeding Myself Emacs"](/force_feeding_myself_emacs/)._
+
+* * *
+
+As this article is running a bit late, I need to get out the article on Drb today. ... Or, double up tomorrow with Drb and MacRuby!

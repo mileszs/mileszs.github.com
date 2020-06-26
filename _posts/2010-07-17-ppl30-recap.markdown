@@ -1,0 +1,45 @@
+---
+layout:     post
+title:      PPL30 Recap
+alias: /blog/2010/07/17/ppl30-recap.html
+date: 2010-07-17 17:41
+categories: [ppl30, programming]
+---
+
+It was 30 days. Thirty days gone. Thirty days of so little sleep as to feel like 60. Thirty days of so little liesure time as to feel like 15. Thirty days, each of which was determined to inflict exhaustion.
+
+It was fun, though.
+
+## What Day Was Your Favorite? ##
+
+The most frequent question asked of me with regards to the PPL30 is _"Of the things you covered, what was your favorite?"_. That has proven a more difficult question to answer than I had anticipated. I remember the first week, but vaguely. _The last time I touched Redis was last year, right?_ However, it's worth spending some time reviewing my own posts, in the hope that they will spurn memories and feelings to guide me to my favorites. In the end, there were two things that I've held onto through all the memory loss:
+
+### C ###
+
+<em>**What?!** C? Interesting? Are you mad?</em> No. No I am not. Listen: I mentioned it [when I reviewed it](http://mileszs.com/blog/2010/07/08/ppl30-day-25-c.html) -- there's just something about C that I like. It feels powerful. It feels macho. It feels close to the metal. I've always felt _inferior_ for only learning enough C to pass a course. Therefore, the first task I'm assigning to myself upon completion of the PPL30 is to finish [_The C Programming Language_, or _K&R_](http://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628).
+
+### Lisp ###
+
+There were two Lisps on the list: Clojure, and Scheme. Between the two of them, Lisp was really the winner of the PPL30, if my affection was the prize. I enjoyed them so much that, upon completion of the final article (which covered Scheme), I ordered a used copy of [The Little Schemer](http://www.amazon.com/Little-Schemer-Daniel-P-Friedman/dp/0262560992/ref=sr_1_1?ie=UTF8&s=books&qid=1279488075&sr=8-1), which is sitting beside me now (and hardly seems 'used', much to my delight). Lisp seems an elegant and powerful family of languages, and I greatly look forward to diving deeper. Though Lisp is often considered impractical, it sometimes takes the impractical to open ones eyes to the practical possiblities lying elsewhere.
+
+### Honorable Mentions ###
+
+C and Lisp are merely the two things I immediately put on my 'to do list' after `git push`ing the final PPL30 article. Several of the things I covered I intend to work with again. In fact, I've been using ZSH since I finished [the ZSH article](http://mileszs.com/blog/2010/07/05/ppl30-day-22-zsh.html). Until recently, Unicorn and Nginx were in use on the CI server at work. This blog uses some features of HTML5. I want to use Redis and Riak together (despite it seeming ridiculous). I think I'll go ahead and convert [vimtweets.com](http://vimtweets.com) to Rails 3 and DataMapper. Node.js is pretty badass -- if I could just dream up a project on which to use it. Oh, there's LowPro.
+
+If you're keeping track, that's days 30, 25, 22, 21, 17, 14, 13, 8, 2, and 1.
+
+## Would You Do It Again? ##
+
+Pssssshhhhhh no. Not at this rate or scale. Not for 30 days straight. Listen: I learned **a lot**. It was great. I'm quite happy I did it. However, it's a grind. One hour a day? _Please._ I'd estimate three hours each on average, including writing time. I lost at least 1 hour of sleep every weekday. Coffee was my savior.
+
+You should try it. <em>What? Did you not just say that you wouldn't do it again?</em> Yeah, I said that. I can say that, because I've done it. Have you done it? Okay. Well, do it.
+
+All joking aside, do it. It's intense. You will learn something new every single day. Writing each article forces you to really know the material about which you're writing (even if it's only a fraction of the whole subject). You can get a good look at all of those things you've been telling people you want to learn. "Oh, Node.js? Yeah, I'm totally going to check that out." When? "Man, I've been meaning to play with ZSH. I'm going to do that soon." Soon, huh? You mean, "I'm going to check that out when I can't ignore it any longer". Just do 30 days, and tell everyone you're going to do 30 days. Write that first blog post. You know what? Do 14 days. Hell, I might do a couple sets of 5 week days this fall to catch up.
+
+## Are You Glad You Did It? ##
+
+Absolutely. I am really glad I did it. I learned a ton, I had a lot of fun, and it's spawned some great conversations since it began. I also learned how much I can get done when I really need to get something done! Just try it. What's 30 days in a lifetime? It's not even 10% of the year. Try it. You'll be happy you did.
+
+* * *
+
+While you're at it, go remind Tim [on his blog](http://timharvey.net) or [on Twitter](http://twitter.com/tihm) that he needs to finish the final third of his PPL30.

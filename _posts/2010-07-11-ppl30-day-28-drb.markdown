@@ -1,0 +1,89 @@
+---
+title: "PPL30 Day 28: DRb"
+layout: post
+alias: /blog/2010/07/11/ppl30-day-27-drb.html
+date: 2010-07-11 23:44
+categories: [ppl30, programming]
+---
+
+Today... err, yesterday, I began looking at Distributed Ruby, or DRb. DRb is a system for allowing Ruby processes to communicate with each other. Really, it's a client/server thing.
+
+<em><small>This is part of the Peer Pressure Learning 30 series. To learn more about what in the hell that means, see the intro to the series, [A Good Time To Learn](http://mileszs.com/blog/2010/06/13/a-good-time-to-learn.html).</small></em>
+
+## Installation ##
+
+**NOTHING!** DRb is included in Ruby 1.8+.
+
+![todo list nothing](/images/to-do-nothing.jpg "Do nothing. Check! PPL30 ... uh... Do nothing. Check!")
+
+## Resources ##
+
+### The DRb Site ###
+
+I started with what I believe to be [the DRb site](http://segment7.net/projects/ruby/drb/index.html). In particular, the [Introduction to DRb](http://segment7.net/projects/ruby/drb/introduction.html) was a pretty straightforward way to get started. If your eyes are up to the task of actually reading the content on this site, the content can be quite informative.
+
+![bloodshot eye](/images/bloodshot.jpg "This is a drawing of my eyeball after reading the DRb site.")
+
+## What I Think I Now Know ##
+
+DRb is a lot of fun to play with, for some reason. I don't really think [the DRb site](http://segment7.net/projects/ruby/drb/index.html) quite does it justice, actually. There are many possibilities. For instance, distributed FizzBuzz!
+
+**Server:**
+
+```ruby
+#!/usr/bin/env ruby
+#
+# Server
+
+require 'drb'
+
+class FizzBuzz
+  def initialize(range = 1..100)
+    @range = range
+  end
+
+  def range=(home)
+    @range = home
+  end
+
+  def fizzbuzz
+    @range.to_a.map do |num|
+      result = ''
+      result = 'Fizz' if num % 3 == 0
+      result += 'Buzz' if num % 5 == 0
+      result.empty? ? num : result
+    end
+  end
+end
+
+DRb.start_service 'druby://:9000', FizzBuzz.new
+puts DRb.uri
+
+trap("INT") { DRb.stop_service }
+DRb.thread.join
+```
+
+**Client:**
+
+```ruby
+#!/usr/bin/env ruby
+#
+# Client
+
+require 'drb'
+
+DRb.start_service
+fb = DRbObject.new nil, 'druby://:9000'
+fb.range = 1..200
+fb.fizzbuzz.each {|r| puts r }
+```
+
+Of _course_ we need to access FizzBuzz answers from a remote client, right? Place each of those in an executable file (e.g. the server script in `server.rb`, the client script in `client.rb`). Then, in one terminal window, run `./server.rb`, and in the other run `./client.rb`. **MAGIC!**
+
+![magic johnson](/images/magic-johnson.jpg "I was one of the best distributors to ever play the game. Look it up if ya don't know.")
+
+I really recommend giving the [Introduction to DRb](http://segment7.net/projects/ruby/drb/introduction.html) a quick skim, at least. It's really not too complicated, as long as you're awake enough to read it clearly.
+
+* * *
+
+I'm so close. I will be doubling up tomorrow, as tomorrow marks the final day of the PPL30. I swear, I'm going to finish. Success is within my grasp, and I shall not allow accolades of such great import slip feebly from my fingers! ... Yup, so, Schema and MacRuby.

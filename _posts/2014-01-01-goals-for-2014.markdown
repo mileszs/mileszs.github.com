@@ -1,0 +1,74 @@
+---
+layout: post
+title: "Goals for 2014"
+date: 2014-01-02 11:41
+comments: true
+categories: 
+---
+
+I am honored to be the first to tell you that it is a new year as of recently. Moreover, I am elated to be the first to talk about goals for this new year. Hell, I am probably the first to think of using a year as a convenient period of time in which to have somewhat large goals. I am always doing stuff like that: being way ahead of trends. I mean, I was running Linux on my desktop way before this year, which is obviously The Year of Linux on the Desktop.
+
+Seriously, though, I have some basic goals for 2014 that I'd like to share. I'd like to share them mostly because it will help me to remember that I made them in the first place. These aren't _resolutions_. They're just some things I'd like to do. Some are important. Most aren't.
+
+I am not usually one to set any yearly goals. Perhaps I will learn enough from simply having done this that next year's post will be a bit more focused, and a bit more "system"-oriented, as opposed to simple goals. _Perhaps_.
+
+## Lose Ten Pounds
+
+The bandwagon for this one was already pretty packed, but I found a spot to squeeze in to. The whole damned thing smells like sweat and disappointment, though.
+
+I lost ten in 2013. I'd like to do that again. It's going to be a lot harder this year, I think. I'm considering avoiding the glutens. I heard glutens are actually evil little beings, aided and abedded by wheat. Shaped like microscopic velociraptors with six legs, they chomp on your insides, which isn't very comfortable. Their saliva, however, heals the wounds. Not only do you quickly feel better, but you're hungry again. I think that's how it works, anyway.
+
+## Record More Music
+
+I'll have a home office again in 2014! Woo hoo! Everyone: put your hand in the air and receive my spirit's enthusiastic-but-still-noticeably-chilling high-five! I'll be able to again leave my instruments and recording equipment in place. I hope this will allow me to record more. Recording more would warm my spirit, which would probably make these distance high-fives better.
+
+I barely recorded anything in 2013. That needs to change, if for no other reason than that I will improve more quickly if I can hear my mistakes on tape, so to speak. I don't know that I'll publish anything. I'm fairly uncomfortable with my voice's intonation, so I'll have to work on that, first. As long as I record a song a month at minimum, I'll be happy.
+
+## Read Ten Non-Fiction Books
+
+I wanted to read ten non-fiction books in 2013, but I read about eight. This year, I'm armed with the Internet's favorite type of content: a mother-fuckin' list.
+
++ _The 5 Elements of Effective Thinking_ by **Edward B. Burger, Michael Starbird**
++ _So Good They Can't Ignore You_ by **Cal Newport**
++ _What They Don't Teach You at Harvard Business School_ by **Mark H. McCormack**
++ _The E-Myth Revisited_ by **Michael E. Gerber**
++ _Getting Naked_ by **Patrick Lencioni**
++ _Getting to Yes_ by **William L. Ury, Bruce Patton**
++ _Power Questions_ by **Andrew Sobel, Jerold Panas**
++ _Practical Object Oriented Design in Ruby_ by **Sandi Metz**
++ _The Signal and the Noise_ by **Nate Silver**
++ _Think and Grow Rich_ by **Napoleon Hill**
+
+Those are in random order, and might not even be the exact list I read, but at least I've got a list.
+
+Honestly, I need to get better at reading non-fiction. I plan to write down what I expect/want to learn from each book based on the table of contents and summaries before I begin reading. Then I'll take some high-level notes as I go along.
+
+I'm a pretty terrible non-fiction reader. I never really learned to study.
+
+## Read Thirty Fiction Books
+
+I like fiction. I have a long, long list of fantasy and sci-fi books I want to read someday. I have a terrifying, daunting, demoralizing amount of books I own but have not read. I inherited many of them. I also buy books from Half-Price Books like Google buys startups. "Ooh, pretty. Ima put that on my shelf and probably do something with it some day. [years pass] Shit is _dusty_."
+
+For the curious, I want to read the Gentleman Bastard series by Scott Lynch, The Princess Bride by William S. Goldman (which I own), some Phillip K. Dick (which I also own), and anything I find by Kurt Vonnegut, Jr. or Roger Zelazny that I haven't read. Other than that, I've been trying to make Patrick Rothfuss [think I am well-read](http://blog.patrickrothfuss.com/2011/06/fanmail-faq-looking-for-good-books/).
+
+I read twenty-some-odd fiction books in 2013. Thirty can be done.
+
+## Be a Better Father and Husband
+
+Whoa! We were just talking about like princess brides and hobbitses or some such and then BAM! Real Talk.
+
+Yup. That's what's happening.
+
+I am often too impatient as a father. My wife is a model of patience with our children. She is so patient that it actually makes me anxious. I can't justify the _why_ of the anxiety. I'll simply stand, staring at her in amazement as she calmly explains and reasons with this kid. A Weird Feeling of Anxiety slowly crawls up my shoulder blades -- it tickles -- and begins whispering in my ear, "Man, look at that. It is ridiculous. Something is wrong with that. I mean, is she even _right_? Or maybe she should yell more. I mean, maybe this kid needs _some_ punishment. Probably something, though, right, because this is making me uncomfortable. Who has this kind of _patience_?"
+
+"No, damn it, Weird Feeling of Anxiety, this is awesome. Why can't I do it?"
+
+We've also discovered that the more patient I am, the happier she is. Of course, the kids are happier, too.
+
+I don't think I do enough with my son. (For the record, my daughter is 6 months old. Her and I do about all she can do, as often as possible because, man, 6-month-olds are adorable little creatures.) We read books, play cars, build with blocks, or have a bit of catch indoors. This year, I want to heavily increase the _outdoor_ activities, and vary the inside activities as well. My son is 2.5 -- which I sometimes think of as _only_ 2.5, and other times think of as "Whoa! Dude is now TWO AND A HALF!". The point is, I feel some pressure to make sure he has all sorts of new experiences.I want to make sure I am involved, and not just a spectator.
+
+## The End
+
+Those are my goals. They're not too exciting. They're realistic. Realistic goals are good.
+
+I will not be doing a retrospective of 2013. I'm not sure I've ever been happier to have put a year behind me. Truthfully, I don't think I've ever had any actual feeling about stepping up a digit in the calendar year. Welp, 2013 can go fuck itself. I miss my dad.
