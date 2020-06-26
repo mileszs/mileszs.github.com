@@ -30,9 +30,10 @@ twitter_username: mileszs
 github_username:  mileszs
 
 # Build settings
-theme: tale
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
 
 permalink:  /:title
 paginate:   5
