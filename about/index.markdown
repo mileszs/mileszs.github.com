@@ -9,7 +9,7 @@ footer: false
 
 # About Me
 
-![](/images/my-face.png){:.inline} Hey. Prepare for more than you actually cared to know about me when you pressed the link to here. There's not even a reward at the end. The journey is the reward, or something. Anyway, as Samwise Gamgee says, "It’s the job that’s never started that takes the longest to finish." So let's get going.
+![](/images/my-face.png){:.inline-right} Hey. Prepare for more than you actually cared to know about me when you pressed the link to here. There's not even a reward at the end. The journey is the reward, or something. Anyway, as Samwise Gamgee says, "It’s the job that’s never started that takes the longest to finish." So let's get going.
 
 I enjoy helping people, writing code, and helping people write code. I am the Director of Engineering at [Olio](https://olio.health), where I get to help people, write code, and help people write code that helps people. Olio is made up of people with whom it is great to work (_and_ play, honestly). Ask me about it. I'll happily tell you more!
 

@@ -61,7 +61,12 @@ img {
   max-width: 100%;
 }
 
-img.inline {
+img.inline-right {
+  float: right;
+  margin: 0 0 0 1rem;
+}
+
+img.inline-left {
   float: left;
   margin: 0 1rem 0 0;
 }
