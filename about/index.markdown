@@ -11,7 +11,7 @@ footer: false
 
 ![](/images/my-face.png){:.inline-right} Hey. Prepare for more than you actually cared to know about me when you pressed the link to here. There's not even a reward at the end. The journey is the reward, or something. Anyway, as Samwise Gamgee says, "It’s the job that’s never started that takes the longest to finish." So let's get going.
 
-I enjoy helping people, writing code, and helping people write code. I am the Director of Engineering at [Olio](https://olio.health), where I get to help people, write code, and help people write code that helps people. Olio is made up of people with whom it is great to work (_and_ play, honestly). Ask me about it. I'll happily tell you more!
+I enjoy helping people, writing code, and helping people write code. I am the Director of Engineering at [DriverReach](https://www.driverreach.com), where I get to help people, write code, and help people write code that helps people. I get to help software engineers and engineering managers grow their careers and grow our product. It's a wonderful thing to watch a team grow and create and celebrate their successes!
 
 <br style="clear: both;" />
 
@@ -24,12 +24,12 @@ Community stuff: I founded [IndyHackers](http://indyhackers.org), a 501(c)3 dedi
 
 ![The Sterretts on a hike in the Smokies](/images/at-family-pic.jpg)
 
-I have many too many hobbies, and hop from one to another like rocks across the stream of time. I dabble with various musical instruments, like guitar, bass, ukulele, mandolin, saxophone, tin whistle, and washboard (not joking!). I like to read a lot ([find me on Goodreads](https://www.goodreads.com/user/show/19490855-miles-sterrett)). I enjoy many different tabletop games—board games, role-playing games, etc. In fact, I on-and-off get obsessed with tabletop roleplaying games. I like backpacking/hiking/camping. These are all things you might see here. The others, probably not so much. Maybe.
+I have many too many hobbies, and hop from one to another like rocks across the stream of time. I dabble with various musical instruments, like guitar, bass, ukulele, mandolin, saxophone, piano, tin whistle, and washboard (not joking!). I like to read a lot ([find me on Goodreads](https://www.goodreads.com/user/show/19490855-miles-sterrett)). I enjoy many different tabletop games—board games, role-playing games, etc. In fact, I on-and-off get obsessed with tabletop roleplaying games. I like backpacking/hiking/camping. I recently got into indoor rock climbing despite being mildly afraid of heights. ¯\_(ツ)_/¯
 
-Also, I [tweet](http://twitter.com/mileszs). I [push code to Github](http://github.com/mileszs).
+Also, I used to [tweet](http://twitter.com/mileszs). Now I... Well, now I [toot](https://ruby.social/@mileszs). I [push code to Github](http://github.com/mileszs). I am on [LinkedIn](https://www.linkedin.com/in/mileszs/), but I tend to be quiet there.
 
 Most importantly: I'm lucky enough to have a lovely wife, Melissa, a son, Zane, and a daughter, Aubrey.
 
 ![The Sterretts at a Liverpool FC match at Notre Dame stadium](/images/family-at-liverpool-match.jpg)
 
-I actually _enjoy_ getting email. So please [email me](mailto:miles@mileszs.com).
+I _enjoy_ getting email from real people. So please [email me](mailto:miles@mileszs.com). Or DM me on something!
