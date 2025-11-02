@@ -11,7 +11,7 @@ footer: false
 
 “Miles, you’re hard to buy gifts for.”
 
-“WHAT\!? But I have so many hobbies\! I want \_so many\_ things\!”
+“WHAT!? But I have so many hobbies\! I want _so many_ things!”
 
 “Well, yeah, but you also buy yourself most of the things you want, and have specific preferences.”
 
@@ -25,7 +25,7 @@ I am more than happy to get *used* instruments. In fact, a part of me prefers it
 
 * Vibraslap  
 * Tambourine (hand)  
-* Tambourine (foot—it’s a thing\!)  
+* Tambourine (foot—it’s a thing!)  
 * Various other hand percussion instruments (cabasa, guiro, etc)  
 * Hi-hat (to go with the snare drum I have)  
 * Tenor or Baritone Ukulele  
@@ -35,13 +35,13 @@ I am more than happy to get *used* instruments. In fact, a part of me prefers it
 
 ## Accessories
 
-* Guitar or bass effects pedals; I love ‘fuzz’ pedals, but anything is fun\!  
+* Guitar or bass effects pedals; I love ‘fuzz’ pedals, but anything is fun!  
 * Ukulele strap  
 * Saxophone strap; I have one, but I bet there are interesting fancy ones out there?
 
 ## Miscellaneous but Related
 
-* PA System (I could theoretically host jam sessions like a full band\!)
+* PA System (I could theoretically host jam sessions like a full band!)
 
 # Books
 
@@ -84,7 +84,7 @@ I’m probably pretty good on shoes at this time. That said:
 
 * I wear 11.5, typically  
 * I like a wide toebox, which are becoming a bit more common  
-* Sperrys or Hey Dudes or that sort of slip on casual shoe are welcomed (my old Toms are looking ratty\!)  
+* Sperrys or Hey Dudes or that sort of slip on casual shoe are welcomed (my old Toms are looking ratty!)  
 * I want Chacos (Classics or Z/Cloud), but they’re so expensive; I’ve looked at used ones, actually
 
 # Disc Golf
