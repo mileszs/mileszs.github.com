@@ -19,7 +19,7 @@ footer: false
 
 Hopefully this will help.
 
-_FYI: I put some _expensive_ items on here. I don't expect them as gifts. I don't expect any gifts! Hell, just get me a bottle of dry red wine. It will definitely get used. No, I put the expensive stuff on there in case you come across a used one or a great deal (or both). I hope you'll be inspired to tell me about it! :-)_
+_FYI: I put some **expensive** items on here. I don't expect them as gifts. I don't expect any gifts! Hell, just get me a bottle of dry red wine. It will definitely get used. No, I put the expensive stuff on there in case you come across a used one or a great deal (or both). I hope you'll be inspired to tell me about it! :-)_
 
 ## Clothes
 
