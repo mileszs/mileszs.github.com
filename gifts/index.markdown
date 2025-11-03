@@ -19,6 +19,8 @@ footer: false
 
 Hopefully this will help.
 
+_FYI: I put some _expensive_ items on here. I don't expect them as gifts. I don't expect any gifts! Hell, just get me a bottle of dry red wine. It will definitely get used. No, I put the expensive stuff on there in case you come across a used one or a great deal (or both). I hope you'll be inspired to tell me about it! :-)_
+
 ## Clothes
 
 Your best bet here is probably to avoid getting me clothes, to be honest. I’m persnickety, as Grandma would say. I’ll try to give some guidance, though.
@@ -76,7 +78,7 @@ Again, I’m happy to get used books.
 * Dan Da Dan (manga)
 * Dorhedoro (manga)
 
-# Camping, Backpacking, & Hiking
+## Camping, Backpacking, & Hiking
 
 This one is really hard, because particularly with backpacking I have very specific preferences. Also, as a family, we’ve struggled to go camping as often as I’d like.
 
@@ -99,14 +101,14 @@ Used tools are good, too! I don’t mind.
 
 I’m not _super_ handy, but I do stuff here and there. Maybe even more than that, I like to _try_ to do stuff. Haha.
 
-* Impact Driver
+* Impact driver
 * Belt sander (hand)
 * Belt & disc sander (standing)
 * Toolbox—portable for taking tools to the school for the musical; relatively large so I can just throw stuff from my primary toolbox into it and go. Maybe even wheeled?
 * Lathe (Seems so fun, but this is probably ridiculous of me)
 
 
-# Disc Golf
+## Disc Golf
 
 I really enjoy disc golf. It’s like a hike while throwing a frisbee.
 
@@ -114,6 +116,22 @@ I really enjoy disc golf. It’s like a hike while throwing a frisbee.
 * Disc golf discs with cool prints. Used is fine\! I am not good enough to have strong disc preferences.
 * Any silly, fun, weird accessories
 
-# Miscellaneous
+## Indoor Climbing
 
-* The Lord of the Rings movie trilogy on Blu-Ray
+This is probably my favorite activity, but I'm not paying for a membership right this second. It's expensive! I'll get back to it, though.
+
+* A month of membership? Haha
+* A chalk bag with waist belt; they make some really nifty designs :-)
+
+## Plants
+
+I love indoor plants, particularly easy ones. Haha.
+
+* Pothos; you can never have enough pothos
+* Pots; any neat plant pot is welcomed! Even plain terracotta is great to have on hand, but crazy fantasy-themed stuff is exciting
+* Plants + technology is fascinating to me; I'd love to collect data on my soil moisture levels, etc
+
+## Miscellaneous
+
+* The Lord of the Rings movie trilogy on Blu-Ray — extended edition!
+* DVDs of live concerts for bands I like
