@@ -9,7 +9,16 @@ footer: false
 
 # Northview Theater Sound Crew
 
-[YouTube Playlist of useful videos for sound crew](https://youtube.com/playlist?list=PLA24qkj70n741DsXFHOuKCFP2eKmifpwR&si=D8dAgczXjsKoJiuW)
+Get started by watching a few videos about sound in theater (and live music) scenarios on our [YouTube Playlist](https://youtube.com/playlist?list=PLA24qkj70n741DsXFHOuKCFP2eKmifpwR&si=D8dAgczXjsKoJiuW). You'll learn about:
+
+- Mixing sound (running the board) like a pro for Hamilton does
+- Theatrical mic placement
+- Designing sound for theater
+- Preparing scripts and mic lists
+- QLab for sound cues
+- Setting up a PA system (as we don't have a permanent installation)
+
+Most of the videos are short-ish and/or entertaining. The mic placement video is, admittedly, long and a bit boring. However, for now, you can stop watching when you get to the Earwig section. The most important part to practice is rigging up wig clips for the mic element, and hiding mics in the hair using wig clips.
 
 ## Documentation
 
