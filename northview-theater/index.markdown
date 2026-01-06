@@ -18,7 +18,9 @@ Get started by watching a few videos about sound in theater (and live music) sce
 - QLab for sound cues
 - Setting up a PA system (as we don't have a permanent installation)
 
-Most of the videos are short-ish and/or entertaining. The mic placement video is, admittedly, long and a bit boring. However, for now, you can stop watching when you get to the Earwig section. The most important part to practice is rigging up wig clips for the mic element, and hiding mics in the hair using wig clips.
+Most of the videos are short-ish and/or entertaining. The most important (and, in my opinion, fun) video to watch is "Adam Savage Explores the Sound Mixing of Hamilton!". In it, a professional audio technician demonstrates line-by-line mixing and using his ears to adjust levels for the actors (as actors might not give the same performance at the same volume predictably every show—so we have to adjust to help them). Though we might fall back to simply having actors' mics up if they're on stage, the pros raise and lower mics line by line, or very near to line by line. We want to at least practice it and begin developing that ability! If you ask a professional, they will tell you that to be taken seriously in regional theater or on Broadway, you need to understand and be capable of line-by-line mixing.
+
+Some videos are less engaging. The mic placement video is, admittedly, long and a bit boring. However, for now, you can stop watching when you get to the Earwig section. The most important part to practice is rigging up wig clips for the mic element, and hiding mics in the hair using wig clips. _Everyone_ should practice rigging mics with wig clips! If you want to practice the other techniques, that would be great, too. 
 
 ## Documentation
 
