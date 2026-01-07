@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Northciew Theater Sound Crew"
+title: "Northview Theater Sound Crew"
 date: 2026-01-01 13:45
 comments: false
 sharing: false
@@ -9,7 +9,21 @@ footer: false
 
 # Northview Theater Sound Crew
 
-Get started by watching a few videos about sound in theater (and live music) scenarios on our [YouTube Playlist](https://youtube.com/playlist?list=PLA24qkj70n741DsXFHOuKCFP2eKmifpwR&si=D8dAgczXjsKoJiuW). You'll learn about:
+Welcome to the sound crew! 🎤 You're about to learn how to make sure every word, song, and sound effect in our musical is heard clearly by the audience. Sound crew is a super important job—without you, the audience won't be able to hear the actors, and all the hard work everyone put into the show won't matter!
+
+## What You'll Be Doing
+
+As part of the sound crew, you'll help with:
+- **Setting up microphones** on actors before each show
+- **Running the sound board** during the show (mixing sound in real-time)
+- **Playing sound effects** and music cues at the right moments
+- **Troubleshooting** if something goes wrong (and knowing what to do!)
+
+Don't worry if this sounds like a lot—you'll learn it step by step, and you'll have help along the way. By the end, you'll be a sound pro!
+
+## Getting Started: Watch and Learn
+
+The best way to start learning is by watching some videos about sound in theater. Check out our [YouTube Playlist](https://youtube.com/playlist?list=PLA24qkj70n741DsXFHOuKCFP2eKmifpwR&si=D8dAgczXjsKoJiuW) to learn about:
 
 - Mixing sound (running the board) like a pro for Hamilton does
 - Theatrical mic placement
@@ -18,19 +32,29 @@ Get started by watching a few videos about sound in theater (and live music) sce
 - QLab for sound cues
 - Setting up a PA system (as we don't have a permanent installation)
 
-Most of the videos are short-ish and/or entertaining. The most important (and, in my opinion, fun) video to watch is "Adam Savage Explores the Sound Mixing of Hamilton!". In it, a professional audio technician demonstrates line-by-line mixing and using his ears to adjust levels for the actors (as actors might not give the same performance at the same volume predictably every show—so we have to adjust to help them). Though we might fall back to simply having actors' mics up if they're on stage, the pros raise and lower mics line by line, or very near to line by line. We want to at least practice it and begin developing that ability! If you ask a professional, they will tell you that to be taken seriously in regional theater or on Broadway, you need to understand and be capable of line-by-line mixing.
+Most of the videos are pretty short and entertaining! Here's what to focus on:
 
-Some videos are less engaging. The mic placement video is, admittedly, long and a bit boring. However, for now, you can stop watching when you get to the Earwig section. The most important part to practice is rigging up wig clips for the mic element, and hiding mics in the hair using wig clips. _Everyone_ should practice rigging mics with wig clips! If you want to practice the other techniques, that would be great, too. 
+**🎯 Must-Watch Video:** "Adam Savage Explores the Sound Mixing of Hamilton!" - This is the most important (and fun!) video. You'll see a professional sound mixer doing "line-by-line mixing"—that means they adjust the volume for each actor's mic as they speak, raising and lowering it throughout the show. Why? Because actors don't always perform at the same volume every night, so we need to adjust to help them sound their best. 
 
-## Documentation
+While we might start simple (just keeping mics on when actors are on stage), we want to practice line-by-line mixing and get good at it! This is what the pros do, and it's a skill that will help you if you want to work in theater later.
 
-You should be very familiar with the following documents:
+**📹 Mic Placement Video:** This one is longer, but it's really important! You can stop watching when you get to the "Earwig" section. The most important part is learning how to rig mics using wig clips and hide them in actors' hair. _Everyone_ should practice this—it's a skill you'll use at every show! If you want to learn the other techniques too, that's awesome, but wig clips are the main thing to master. 
 
-- [Mobile Sound Setup Checklist (Cafetorium Venue)](https://docs.google.com/document/d/122Vr53L-1aY62hv7na49Zpc0uln7LtZHipkKGeNX-sk/edit?usp=drive_link)
-- [Pre-Show Sound Crew Checklist](https://docs.google.com/document/d/15KChUYL3ew-n_gjvULTvpqt9s7IHLuBYKF_qbtIe2w8/edit?usp=sharing)
-- [Emergency Troubleshooting Quick Sheet](https://docs.google.com/document/d/1aoIZyl3lkNG8GVzHui68-2tgcxWy9YZB0VmCdgESkkQ/edit?usp=sharing)
-- [Mic Pack Battery Tracker](https://docs.google.com/document/d/12lo7WeIBBbiH7n39mD3NRHfRa2FJ4U5qo_KSPLkyQpo/edit?usp=sharing)
+## Important Documents (Your Sound Crew Guides)
 
+These documents are your go-to guides for running sound. You don't need to memorize them, but you should know where they are and what they're for. Bookmark them on your phone or tablet so you can check them during shows!
 
+**Before Every Show:**
+- [Pre-Show Sound Crew Checklist](https://docs.google.com/document/d/15KChUYL3ew-n_gjvULTvpqt9s7IHLuBYKF_qbtIe2w8/edit?usp=sharing) - Use this to make sure everything is ready before the audience arrives!
 
-The [Sound Documentation](https://docs.google.com/document/d/1vtOwNbwKEinChNCtytzvG4jEDh4NAznbJLwieFlF4bI/edit?usp=sharing) document is very long, and very technical. **You are not expected to read it all.** When you have questions about our equipment or setup or the like, this document should have the answer. Check here first. If it does not have the answer, please let Miles know so he can update it!
+**Setting Up:**
+- [Mobile Sound Setup Checklist (Cafetorium Venue)](https://docs.google.com/document/d/122Vr53L-1aY62hv7na49Zpc0uln7LtZHipkKGeNX-sk/edit?usp=drive_link) - Step-by-step guide for setting up all our equipment
+
+**When Things Go Wrong:**
+- [Emergency Troubleshooting Quick Sheet](https://docs.google.com/document/d/1aoIZyl3lkNG8GVzHui68-2tgcxWy9YZB0VmCdgESkkQ/edit?usp=sharing) - Quick fixes for common problems (keep this handy during shows!)
+
+**Keeping Track:**
+- [Mic Pack Battery Tracker](https://docs.google.com/document/d/12lo7WeIBBbiH7n39mD3NRHfRa2FJ4U5qo_KSPLkyQpo/edit?usp=sharing) - Track which mic packs need new batteries
+
+**The Big Reference Guide:**
+The [Sound Documentation](https://docs.google.com/document/d/1vtOwNbwKEinChNCtytzvG4jEDh4NAznbJLwieFlF4bI/edit?usp=sharing) document is our complete technical guide. **You don't need to read the whole thing!** It's there when you have questions about specific equipment or how something works. Check here first if you're stuck. If you can't find the answer, let Miles know so we can add it!
