@@ -15,10 +15,12 @@ Welcome to the sound crew! This is your central hub for all sound documentation.
 
 ## Find Your Role
 
-| | |
-|---|---|
-| **[Sound Board Operator](/northview-theater/sound-board-operator/)** | **[Music Operator](/northview-theater/music-operator/)** |
-| **[Mic Wrangler](/northview-theater/mic-wrangler/)** | **[Troubleshooting](/northview-theater/troubleshooting/)** |
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 20px 0;">
+  <a href="/northview-theater/sound-board-operator/" style="display: block; padding: 20px 16px; background: #1e40af; color: white; text-decoration: none; border-radius: 12px; text-align: center; font-weight: bold; font-size: 1.1em;">🎚️<br>Sound Board Operator</a>
+  <a href="/northview-theater/music-operator/" style="display: block; padding: 20px 16px; background: #7c3aed; color: white; text-decoration: none; border-radius: 12px; text-align: center; font-weight: bold; font-size: 1.1em;">🎵<br>Music Operator</a>
+  <a href="/northview-theater/mic-wrangler/" style="display: block; padding: 20px 16px; background: #059669; color: white; text-decoration: none; border-radius: 12px; text-align: center; font-weight: bold; font-size: 1.1em;">🎤<br>Mic Wrangler</a>
+  <a href="/northview-theater/troubleshooting/" style="display: block; padding: 20px 16px; background: #dc2626; color: white; text-decoration: none; border-radius: 12px; text-align: center; font-weight: bold; font-size: 1.1em;">🔧<br>Troubleshooting</a>
+</div>
 
 ---
 
