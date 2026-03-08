@@ -15,12 +15,10 @@ Welcome to the sound crew! This is your central hub for all sound documentation.
 
 ## Find Your Role
 
-<div class="role-buttons" style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 1.5rem 0;">
-  <a href="/northview-theater/sound-board-operator/" style="flex: 1; min-width: 200px; padding: 1.5rem; background: #2563eb; color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: bold;">Sound Board Operator</a>
-  <a href="/northview-theater/music-operator/" style="flex: 1; min-width: 200px; padding: 1.5rem; background: #7c3aed; color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: bold;">Music Operator</a>
-  <a href="/northview-theater/mic-wrangler/" style="flex: 1; min-width: 200px; padding: 1.5rem; background: #059669; color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: bold;">Mic Wrangler</a>
-  <a href="/northview-theater/troubleshooting/" style="flex: 1; min-width: 200px; padding: 1.5rem; background: #dc2626; color: white; text-decoration: none; border-radius: 8px; text-align: center; font-weight: bold;">Troubleshooting</a>
-</div>
+| | |
+|---|---|
+| **[Sound Board Operator](/northview-theater/sound-board-operator/)** | **[Music Operator](/northview-theater/music-operator/)** |
+| **[Mic Wrangler](/northview-theater/mic-wrangler/)** | **[Troubleshooting](/northview-theater/troubleshooting/)** |
 
 ---
 
