@@ -3,3 +3,6 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Source material for the Northview Theater pages, not published with the site
+Sound Documentation.pdf

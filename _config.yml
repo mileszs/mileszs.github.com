@@ -1,58 +1,96 @@
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
+# which you are expected to set up once and rarely edit after that.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 
+# ---------------------------------------------------------------------------
+# Site settings
+# ---------------------------------------------------------------------------
 title: mileszs
 email: miles@mileszs.com
-author: Miles Z. Sterrett
-description: >- # this means to ignore newlines until "baseurl:"
-  The blahg/ramblings of MilesZS
+# Must be a mapping, not a plain string. jekyll-seo-tag derives twitter:creator
+# from `author.twitter`, and with a bare string it falls back to the name and
+# emits the nonsense `@Miles Z. Sterrett`.
+author:
+  name: Miles Z. Sterrett
+  twitter: mileszs
+description: >- # this means to ignore newlines until the next key
+  The blahg/ramblings of MilesZS — Miles Z. Sterrett on software, engineering
+  leadership, books, tabletop games, and whatever else has his attention.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mileszs.github.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: mileszs
-github_username:  mileszs
+# This must match the domain the site is actually served from. It drives
+# canonical URLs, og:url, the JSON-LD blob, RSS entry links, and sitemap.xml.
+url: "https://www.mileszs.com"
+lang: en
+timezone: America/Indiana/Indianapolis
 
+github_username: mileszs
+
+# ---------------------------------------------------------------------------
+# Metadata for jekyll-seo-tag
+# ---------------------------------------------------------------------------
+# `social.links` becomes the `sameAs` array in the JSON-LD Person, which is how
+# search engines and AI crawlers tie this site to the same human elsewhere.
+social:
+  name: Miles Z. Sterrett
+  links:
+    - https://github.com/mileszs
+    - https://ruby.social/@mileszs
+    - https://www.linkedin.com/in/mileszs/
+    - https://www.goodreads.com/user/show/19490855-miles-sterrett
+    - https://twitter.com/mileszs
+
+twitter:
+  username: mileszs
+  # `summary`, not `summary_large_image`: the default sharing image is a 200x200
+  # avatar. Switch to summary_large_image if a ~1200x630 image is added.
+  card: summary
+
+# `logo` is the publisher logo in the JSON-LD blob. The default sharing image
+# (og:image / twitter:image) has to come from a `defaults` entry below, because
+# jekyll-seo-tag reads `page.image` and has no site-level fallback for it.
+logo: /assets/miles-wizard.png
+
+# ---------------------------------------------------------------------------
 # Build settings
+# ---------------------------------------------------------------------------
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 permalink:  /:title
 paginate:   5
 
+defaults:
+  # Fallback sharing image for every page; override per page with `image:`.
+  - scope:
+      path: ""
+    values:
+      image: /assets/miles-wizard.png
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: "northview-theater"
+    values:
+      layout: page
+
+# ---------------------------------------------------------------------------
 # Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Items listed here are added to Jekyll's internal default exclude list.
+# ---------------------------------------------------------------------------
+exclude:
+  - CLAUDE.md
+  - README.md
+  - .bundle/
+  - .claude/
+  - .tool-versions
+  # Source material for the Northview Theater pages; not meant to be published.
+  - "Sound Documentation.pdf"

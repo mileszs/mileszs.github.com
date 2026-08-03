@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Me."
+description: "About Miles Z. Sterrett — engineering leader in Indianapolis, founder of IndyHackers, organizer of the Indianapolis Ruby Brigade, and collector of far too many hobbies."
 date: 2013-01-22 13:07
 comments: false
 sharing: false

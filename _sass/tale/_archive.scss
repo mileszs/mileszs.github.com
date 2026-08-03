@@ -1,0 +1,50 @@
+.archive {
+  &-heading {
+    color: $default-shade;
+    font-family: $sans-serif;
+    font-size: 3rem;
+    margin: 1rem 0 0.5rem;
+    text-align: center;
+  }
+
+  &-intro {
+    color: $default-tint;
+    font-family: $serif-secondary;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  &-year {
+    border-bottom: 0.2rem solid $default-shade;
+    color: $default-shade;
+    font-family: $sans-serif;
+    font-size: 1.6rem;
+    margin: 2.5rem 0 0.5rem;
+    padding-bottom: 0.3rem;
+  }
+
+  &-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      gap: 1rem;
+      line-height: 1.6;
+      padding: 0.3rem 0;
+    }
+
+    time {
+      color: $default-tint;
+      flex: 0 0 4.5rem;
+      font-family: $serif-secondary;
+      font-size: 0.9rem;
+      padding-top: 0.15rem;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

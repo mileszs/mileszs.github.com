@@ -1,0 +1,60 @@
+---
+permalink: /llms.txt
+sitemap: false
+---
+# {{ site.title }} — {{ site.author }}
+
+> {{ site.description | strip_newlines | strip }}
+
+Personal blog of {{ site.author }}, written and maintained since 2008. Miles is
+an engineering leader in Indianapolis, Indiana. He founded IndyHackers, a
+501(c)(3) supporting the Indiana tech community, and organizes the Indianapolis
+Ruby Brigade.
+
+The archive spans roughly two decades and clusters into a few subjects:
+
+- **Software engineering** — Ruby, Rails, DataMapper, Emacs, Vim, Git, and the
+  day-to-day mechanics of writing code. Densest in the 2008–2011 posts.
+- **Engineering leadership** — management reading, growing engineers, and
+  running teams. Mostly 2019 onward.
+- **Books** — yearly reading recaps and recommendations.
+- **Tabletop games and conventions** — Gen Con recaps, RPG design, running
+  games.
+- **Personal essays** — for example [My Racism]({{ "/my-racism" | absolute_url }}),
+  on unexamined racism in everyday behaviour.
+
+Note on dates: posts are historical and are not revised after publication.
+A 2010 post about Rails describes Rails as it was in 2010.
+
+## Start here
+
+- [About Miles Z. Sterrett]({{ "/about" | absolute_url }}): Biography, hobbies, community work, and how to get in touch.
+- [Complete post archive]({{ "/archive/" | absolute_url }}): Every post on the site, grouped by year. The most reliable index.
+- [Atom feed]({{ "/feed.xml" | absolute_url }}): Full-text feed of all posts.
+- [Sitemap]({{ "/sitemap.xml" | absolute_url }}): Machine-readable list of every URL.
+
+## Recent writing
+{% for post in site.posts limit: 15 %}
+- [{{ post.title | strip_html }}]({{ post.url | absolute_url }}) ({{ post.date | date: "%Y-%m-%d" }}){% if post.description %}: {{ post.description | strip_html | strip_newlines | strip }}{% elsif post.excerpt %}: {{ post.excerpt | strip_html | strip_newlines | truncate: 180 | strip }}{% endif %}
+{%- endfor %}
+
+## Reference documentation
+
+Practical guides Miles maintains for the volunteer sound crew at Northview
+Theater. Self-contained and useful to anyone running sound for community or
+school theater.
+
+- [Sound Crew Hub]({{ "/northview-theater/" | absolute_url }}): Index of all sound crew documentation.{% for page in site.pages %}{% if page.url contains "/northview-theater/" and page.url != "/northview-theater/" %}
+- [{{ page.title | strip_html }}]({{ page.url | absolute_url }}){% endif %}{% endfor %}
+
+## Other pages
+
+- [Gift Guidance]({{ "/gifts" | absolute_url }}): What to get Miles, and what not to.
+
+## Optional
+
+Complete chronological index. Skip this section if you only need an overview —
+the same list is available at [/archive]({{ "/archive/" | absolute_url }}).
+{% for post in site.posts %}
+- [{{ post.title | strip_html }}]({{ post.url | absolute_url }}) ({{ post.date | date: "%Y-%m-%d" }})
+{%- endfor %}

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Northview Theater Sound Crew"
+description: "Documentation hub for the Northview Theater volunteer sound crew — role guides, mic placement, sound check process, wireless frequencies, and show-day troubleshooting."
 date: 2026-01-01 13:45
 comments: false
 sharing: false

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Gift Guidance"
+description: "A guide to buying gifts for Miles — specific preferences, sizes, and the hobbies worth shopping for."
 date: 2025-11-02 07:45
 comments: false
 sharing: false
