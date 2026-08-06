@@ -9,25 +9,42 @@ Pages**, served at <https://www.mileszs.com>. Posts go back to 2008.
 
 ## Critical constraints
 
-**GitHub Pages builds this, not you.** The site is built by GitHub's Pages
-service from the `main` branch, root directory, using the `github-pages` gem in
-`--safe` mode. That means:
+**Deploys run through GitHub Actions**, not GitHub's legacy Pages builder. See
+`.github/workflows/pages.yml`. Pushing to `main` triggers a build with
+`bundle exec jekyll build` and a deploy via `actions/deploy-pages`. Pages is
+configured with `build_type: workflow`; the legacy builder is off.
 
-- **Only [GitHub Pages' allowed plugins](https://pages.github.com/versions/) work.**
-  Adding an arbitrary gem to the `Gemfile` will build fine locally and then be
-  silently ignored in production. Currently enabled: `jekyll-feed`,
-  `jekyll-paginate`, `jekyll-seo-tag`, `jekyll-sitemap`.
-- **Jekyll is pinned to 3.10 by `github-pages`.** Do not use Jekyll 4-only
-  syntax. Do not bump the `jekyll` gem directly; bump `github-pages` instead.
-- **`_site/` is not deployed.** It is a local build artifact and is gitignored.
-  Pushing to `main` is what deploys. There is no CI workflow and no `gh-pages`
-  branch.
+- **Build failures show up in the Actions tab** with the real Jekyll error.
+  Check there first. (The legacy builder reported only `Page build failed.`,
+  which is why this repo moved off it.)
+- **CI builds from this repo's `Gemfile.lock`**, so local and deployed builds
+  use identical gem versions. Jekyll is pinned to 3.10 by `github-pages`; do
+  not use Jekyll 4-only syntax, and bump `github-pages` rather than `jekyll`.
+- **Jekyll no longer runs in `--safe` mode.** Plugins outside
+  [GitHub Pages' allowlist](https://pages.github.com/versions/) would now work.
+  Nothing currently relies on that — enabled plugins are `jekyll-feed`,
+  `jekyll-paginate`, `jekyll-seo-tag`, `jekyll-sitemap` — but a custom plugin
+  in `_plugins/` is a real option if it ever earns its keep.
+- **`_site/` is not committed.** It is a local build artifact and is
+  gitignored. There is no `gh-pages` branch.
 
-**Branches.** Pages deploys from `main`. There is a legacy `master` branch that
-is not deployed; ignore it.
+**`exclude:` in `_config.yml` REPLACES Jekyll's default exclude list — it does
+not extend it.** The comment originally shipped in that file said the opposite
+and was wrong. The defaults are repeated verbatim in the config for this
+reason. If you add an entry, do not delete the defaults: dropping `Gemfile`
+and `Gemfile.lock` publishes them to the live site, and dropping
+`vendor/bundle/` breaks CI outright, because `ruby/setup-ruby` installs gems
+into the workspace and Jekyll then tries to parse the Jekyll gem's own
+`site_template` post, whose front matter has an ERB placeholder for a date.
+
+Files and directories starting with `.` or `_` are always ignored by Jekyll, so
+`.github/`, `.claude/` and `_plans/` need no exclude entry.
+
+**Branches.** Deploys come from `main`. The old `master` branch was deleted.
 
 **`CNAME`** contains `www.mileszs.com`. Do not delete or edit it — that file is
-what binds the custom domain, and losing it takes the site off its domain.
+what binds the custom domain, and losing it takes the site off its domain. The
+workflow asserts it survives the build and fails the deploy if it does not.
 
 ## Commands
 
@@ -126,3 +143,12 @@ grep -o 'https://[^"]*' _site/feed.xml | head          # feed URLs use the real 
 
 A missing layout, a broken Liquid tag in `llms.txt`, or a wrong `url:` will all
 build "successfully" and produce quietly wrong output.
+
+Two more worth running after touching `exclude:` or the Gemfile:
+
+```bash
+ls _site/Gemfile _site/Gemfile.lock     # must NOT exist
+find _site -path "*vendor*"             # must be empty
+```
+
+To watch a deploy: `gh run watch $(gh run list --workflow=pages.yml --limit 1 --json databaseId --jq '.[0].databaseId')`
