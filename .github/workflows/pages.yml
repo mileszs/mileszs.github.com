@@ -1,0 +1,79 @@
+# Builds and deploys the site to GitHub Pages.
+#
+# This replaces GitHub's "legacy" Pages builder, which gave no build logs — its
+# only failure output was the string "Page build failed." If a build breaks now,
+# the Actions run shows the actual Jekyll error.
+#
+# Unlike the legacy builder this runs Jekyll from this repo's own Gemfile.lock
+# rather than GitHub's server-side gem set, so local and deployed builds use
+# identical versions. It also does not run Jekyll in --safe mode, which means
+# plugins outside GitHub's allowlist would work if ever needed. (`_config.yml`
+# currently sticks to allowlisted plugins; nothing depends on that changing.)
+name: Deploy Jekyll site to Pages
+
+on:
+  push:
+    branches: [main]
+  # Lets you re-run a deploy from the Actions tab without pushing a commit.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race. Queue rather than cancel, so an in-flight deploy
+# is allowed to finish instead of leaving Pages half-updated.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          # Matches .tool-versions.
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      # Deliberately no --baseurl flag. This site is served from a custom
+      # domain with `baseurl: ""` in _config.yml; letting the action inject a
+      # base path would rewrite every URL on the site.
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --trace
+        env:
+          JEKYLL_ENV: production
+
+      # CNAME lives in the repo root and Jekyll copies it into _site, which is
+      # what keeps www.mileszs.com bound to this site. Fail loudly if it ever
+      # goes missing rather than silently deploying a site that drops the
+      # custom domain.
+      - name: Verify CNAME survived the build
+        run: |
+          test -f ./_site/CNAME || { echo "::error::_site/CNAME missing — custom domain would break"; exit 1; }
+          echo "CNAME: $(cat ./_site/CNAME)"
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
