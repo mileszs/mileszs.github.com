@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: StripeGenerator
+title: "StripeGenerator.com: Good Tool for a Non-Designer"
 date: 2008-01-03 02:05:42 UTC
 comments: true
 categories: 

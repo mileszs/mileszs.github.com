@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: BikesOfIndy
+title: "BikesOfIndy.com Launched"
 date: 2008-01-03 01:29:24 UTC
 comments: true
 categories: 

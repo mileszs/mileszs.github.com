@@ -18,27 +18,33 @@ build, so this file is not published.
 
 ---
 
-## Phase 1 — Repair 5 truncated titles (do this first)
+## Phase 1 — Repair 5 truncated titles ✅ DONE
 
-An old Octopress→Jekyll migration truncated titles at the first `.` character.
-The full title survives in the filename slug, where `.` was encoded as `-dot-`.
-This is recoverable data loss and it is the highest-value fix here: these five
-posts currently show meaningless titles in search results, in the archive, in
-`feed.xml`, and in `llms.txt`.
+An old Octopress→Jekyll migration ran the equivalent of
+`File.basename(title, ".*")` over every post title, treating it as a filename
+and stripping what looked like a file extension. Five titles lost their tail.
 
-| File | Current `title:` | Proposed `title:` |
+`File.basename` strips only the **last** dot-suffix, which is why
+`Vim + rails.vim Seg-Faults in Ubuntu 8.04 (Hardy Heron)` kept `rails.vim`
+intact but lost `.04 (Hardy Heron)`. An earlier reading of this as "truncated at
+the first `.`" was wrong and did not explain that case.
+
+| File | Was | Restored to |
 |---|---|---|
 | `2008-01-03-bikesofindy-dot-com-launched.md` | `BikesOfIndy` | `BikesOfIndy.com Launched` |
 | `2008-01-03-stripegenerator-dot-com:-good-tool-for-a-non-designer.md` | `StripeGenerator` | `StripeGenerator.com: Good Tool for a Non-Designer` |
-| `2008-01-08-ubuntu-8-dot-04-alpha-vmware-image.md` | `Ubuntu 8` | `Ubuntu 8.04 Alpha VMware Image` |
-| `2008-01-10-torrent-available-ubuntu-8-dot-04-alpha-2-vmware-image.md` | `Torrent Available for Ubuntu 8` | `Torrent Available for Ubuntu 8.04 Alpha 2 VMware Image` |
+| `2008-01-08-ubuntu-8-dot-04-alpha-vmware-image.md` | `Ubuntu 8` | `Ubuntu 8.04 Alpha VMWare Image` |
+| `2008-01-10-torrent-available-ubuntu-8-dot-04-alpha-2-vmware-image.md` | `Torrent Available for Ubuntu 8` | `Torrent Available for Ubuntu 8.04 Alpha 2 VMWare Image` |
 | `2008-04-29-vim-rails-dot-vim-seg-faults-in-ubuntu-8-dot-04-hardy-heron-.md` | `Vim + rails.vim Seg-Faults in Ubuntu 8` | `Vim + rails.vim Seg-Faults in Ubuntu 8.04 (Hardy Heron)` |
 
-Proposed titles are reconstructed from the slugs and should be sanity-checked
-against each post's body before applying — the body usually names the software
-version explicitly.
+These are reconstructions, but well-evidenced ones: each one round-trips
+through `File.basename(title, ".*")` back to the surviving truncated title, and
+each is consistent with the filename slug. `Ubuntu 8.04 Alpha VMWare Image` is
+better than a reconstruction — the torrent post cites it verbatim in its own
+body, which is also where the odd `VMWare` capitalisation comes from. It was
+kept as the author wrote it rather than corrected to the vendor's `VMware`.
 
-Titles containing `:` **must be quoted** in YAML.
+All five are quoted in YAML; one contains `:` and would otherwise fail to parse.
 
 Detection script (re-run afterwards; it should report 1 remaining, the benign
 `2014-03-21-update-on-my-goals-for-2014` wording difference):
@@ -57,7 +63,9 @@ Dir["_posts/*"].sort.each do |f|
 end'
 ```
 
-**Commit on its own**, separate from Phases 2 and 3.
+Committed on its own, separate from Phases 2 and 3. Verified afterwards that
+the `<loc>` set in `_site/sitemap.xml` was byte-identical before and after, so
+no permalink moved.
 
 ---
 
@@ -150,7 +158,7 @@ and step 1 is a genuine maintenance burden under `--safe` mode.
 
 ## Suggested commit sequence
 
-1. `Restore post titles truncated by the Octopress migration` — Phase 1.
+1. ~~`Restore post titles truncated by the Octopress migration` — Phase 1.~~ ✅ done
 2. `Add descriptions to posts with unusable excerpts` — Phase 2, Tier 1.
 3. `Add descriptions to frequently-linked posts` — Phase 2, Tier 2.
 4. Phase 3 only if tag pages are actually wanted.

@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Vim + rails.vim Seg-Faults in Ubuntu 8
+title: "Vim + rails.vim Seg-Faults in Ubuntu 8.04 (Hardy Heron)"
 date: 2008-04-29 18:30:00 UTC
 comments: true
 categories: 

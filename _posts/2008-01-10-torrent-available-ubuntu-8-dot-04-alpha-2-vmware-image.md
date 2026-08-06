@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Torrent Available for Ubuntu 8
+title: "Torrent Available for Ubuntu 8.04 Alpha 2 VMWare Image"
 date: 2008-01-10 03:53:40 UTC
 comments: true
 categories: 

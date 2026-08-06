@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: Ubuntu 8
+title: "Ubuntu 8.04 Alpha VMWare Image"
 date: 2008-01-08 03:32:46 UTC
 comments: true
 categories: 
