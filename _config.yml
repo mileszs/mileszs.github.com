@@ -84,13 +84,29 @@ defaults:
 
 # ---------------------------------------------------------------------------
 # Exclude from processing.
-# Items listed here are added to Jekyll's internal default exclude list.
+#
+# WARNING: defining this key REPLACES Jekyll's built-in exclude list, it does
+# not extend it. The defaults must be repeated verbatim below or they stop
+# being excluded. Omitting `vendor/bundle/` in particular breaks CI, where
+# `ruby/setup-ruby` installs gems into the workspace and Jekyll then tries to
+# read the Jekyll gem's own site template, whose placeholder ERB date is not a
+# valid date. Omitting Gemfile/Gemfile.lock publishes them to the live site.
+#
+# Files and directories starting with `.` or `_` are always ignored, so
+# .github/, .claude/, .bundle/, .tool-versions and _plans/ need no entry here.
 # ---------------------------------------------------------------------------
 exclude:
+  # --- Jekyll 3.10 defaults, repeated because this key overrides them ---
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  # --- Project-specific ---
   - CLAUDE.md
   - README.md
-  - .bundle/
-  - .claude/
-  - .tool-versions
   # Source material for the Northview Theater pages; not meant to be published.
   - "Sound Documentation.pdf"
