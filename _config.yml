@@ -36,6 +36,8 @@ github_username: mileszs
 # ---------------------------------------------------------------------------
 # `social.links` becomes the `sameAs` array in the JSON-LD Person, which is how
 # search engines and AI crawlers tie this site to the same human elsewhere.
+# Kept in sync with the profiles linked from the About page. Twitter and
+# ruby.social (Mastodon) were dropped when the About page moved to Bluesky.
 social:
   name: Miles Z. Sterrett
   links:
@@ -43,8 +45,6 @@ social:
     - https://bsky.app/profile/mileszs.bsky.social
     - https://www.linkedin.com/in/mileszs/
     - https://www.goodreads.com/user/show/19490855-miles-sterrett
-    - https://ruby.social/@mileszs
-    - https://twitter.com/mileszs
 
 twitter:
   username: mileszs
