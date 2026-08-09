@@ -177,10 +177,18 @@ Google, not a forwarder.
 
 ## Follow-ups not blocking the outage
 
-- **DKIM is not configured** and never was — no selector found in either zone.
-  Generate a key in Google Admin (Apps → Google Workspace → Gmail →
-  Authenticate email) and publish the TXT it gives you. Without DKIM, DMARC
-  passes on SPF alone, which breaks whenever mail is forwarded.
+- ~~DKIM is not configured.~~ **Wrong — DKIM is configured and valid.**
+  `google._domainkey.mileszs.com` publishes a 2048-bit RSA key.
+
+  The original claim came from a selector sweep run against
+  `ns1199.dns.dyn.com` — the stale Dyn nameserver — after the delegation had
+  already moved to Namecheap. The abandoned zone had no DKIM, so the sweep came
+  back empty and the result was written up as "no selector found in either
+  zone," which overstated a check that only ever touched one zone.
+
+  **Lesson for any future DNS work here: query
+  `dns1.registrar-servers.com`, or use a public resolver. The Dyn servers still
+  answer and will confidently return stale data.**
 - **Enforce HTTPS** in GitHub Pages settings is still off.
 - **Resolved 2026-08-09: the apex is canonical, not `www`.** The GitHub Pages
   custom domain was set to `mileszs.com` during this migration, so live traffic
