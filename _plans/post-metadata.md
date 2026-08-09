@@ -3,7 +3,7 @@
 Deferred follow-up work on the 99 files in `_posts/`. Intentionally kept out of
 the AI-readiness commit so the diff stays reviewable.
 
-Directories starting with `_` that Jekyll does not recognise are ignored by the
+Directories starting with `_` that Jekyll does not recognize are ignored by the
 build, so this file is not published.
 
 ## Hard rules
@@ -41,7 +41,7 @@ These are reconstructions, but well-evidenced ones: each one round-trips
 through `File.basename(title, ".*")` back to the surviving truncated title, and
 each is consistent with the filename slug. `Ubuntu 8.04 Alpha VMWare Image` is
 better than a reconstruction — the torrent post cites it verbatim in its own
-body, which is also where the odd `VMWare` capitalisation comes from. It was
+body, which is also where the odd `VMWare` capitalization comes from. It was
 kept as the author wrote it rather than corrected to the vendor's `VMware`.
 
 All five are quoted in YAML; one contains `:` and would otherwise fail to parse.
@@ -138,10 +138,11 @@ cover one each:
 
 Tags alone change nothing user-visible. To be worth doing, this phase also needs:
 
-1. `_layouts/tag.html` and one stub page per tag under `tags/` — GitHub Pages
-   runs Jekyll in `--safe` mode, so **`jekyll-tagging` and similar generator
-   plugins will not run**. Tag pages must be checked in as real files, or built
-   by iterating `site.tags` on a single page.
+1. `_layouts/tag.html` and one stub page per tag under `tags/`, or a single page
+   iterating `site.tags`. (Deploys now run through GitHub Actions rather than
+   the legacy builder, so Jekyll is no longer in `--safe` mode and a generator
+   plugin such as `jekyll-tagging` *would* work — but adding a plugin to build
+   tag pages is a heavier commitment than checking in stubs.)
 2. Tag links in `_layouts/post.html`.
 3. Styling in `_sass/tale/`.
 4. A line in `CLAUDE.md` telling future contributors to add the stub file when
@@ -152,7 +153,7 @@ Tags alone change nothing user-visible. To be worth doing, this phase also needs
 Defer. The `/archive/` page added in the AI-readiness commit already solves the
 practical discovery problem — every post reachable in one click, grouped by
 year. Tag pages are a nice-to-have on a blog that publishes roughly once a year,
-and step 1 is a genuine maintenance burden under `--safe` mode.
+and step 1 is a genuine maintenance burden either way.
 
 ---
 

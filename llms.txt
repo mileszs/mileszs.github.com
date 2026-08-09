@@ -2,14 +2,19 @@
 permalink: /llms.txt
 sitemap: false
 ---
-# {{ site.title }} — {{ site.author }}
+{%- comment -%}
+  site.author is a mapping (name + twitter), not a string — see _config.yml.
+  Always use site.author.name; bare site.author renders the whole hash.
+{%- endcomment -%}
+# {{ site.title }} — {{ site.author.name }}
 
 > {{ site.description | strip_newlines | strip }}
 
-Personal blog of {{ site.author }}, written and maintained since 2008. Miles is
-an engineering leader in Indianapolis, Indiana. He founded IndyHackers, a
-501(c)(3) supporting the Indiana tech community, and organizes the Indianapolis
-Ruby Brigade.
+Personal blog of {{ site.author.name }}, written and maintained since 2008.
+Miles is an engineering leader in Indianapolis, Indiana. He founded IndyHackers,
+a 501(c)(3) supporting the Indiana tech community, and organized the
+Indianapolis Ruby Brigade for about a decade. See the About page for what he is
+doing now — it is kept current, this summary is not the authority.
 
 The archive spans roughly two decades and clusters into a few subjects:
 
@@ -21,7 +26,7 @@ The archive spans roughly two decades and clusters into a few subjects:
 - **Tabletop games and conventions** — Gen Con recaps, RPG design, running
   games.
 - **Personal essays** — for example [My Racism]({{ "/my-racism" | absolute_url }}),
-  on unexamined racism in everyday behaviour.
+  on unexamined racism in everyday behavior.
 
 Note on dates: posts are historical and are not revised after publication.
 A 2010 post about Rails describes Rails as it was in 2010.

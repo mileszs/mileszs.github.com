@@ -54,7 +54,7 @@ jobs:
           JEKYLL_ENV: production
 
       # CNAME lives in the repo root and Jekyll copies it into _site, which is
-      # what keeps www.mileszs.com bound to this site. Fail loudly if it ever
+      # what keeps mileszs.com bound to this site. Fail loudly if it ever
       # goes missing rather than silently deploying a site that drops the
       # custom domain.
       - name: Verify CNAME survived the build

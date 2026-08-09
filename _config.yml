@@ -21,9 +21,11 @@ description: >- # this means to ignore newlines until the next key
   The blahg/ramblings of MilesZS — Miles Z. Sterrett on software, engineering
   leadership, books, tabletop games, and whatever else has his attention.
 baseurl: "" # the subpath of your site, e.g. /blog
-# This must match the domain the site is actually served from. It drives
+# This must match the domain the site is actually served from, and must agree
+# with the CNAME file and the GitHub Pages custom domain setting. It drives
 # canonical URLs, og:url, the JSON-LD blob, RSS entry links, and sitemap.xml.
-url: "https://www.mileszs.com"
+# The apex is canonical; www.mileszs.com 301s here.
+url: "https://mileszs.com"
 lang: en
 timezone: America/Indiana/Indianapolis
 
@@ -38,9 +40,10 @@ social:
   name: Miles Z. Sterrett
   links:
     - https://github.com/mileszs
-    - https://ruby.social/@mileszs
+    - https://bsky.app/profile/mileszs.bsky.social
     - https://www.linkedin.com/in/mileszs/
     - https://www.goodreads.com/user/show/19490855-miles-sterrett
+    - https://ruby.social/@mileszs
     - https://twitter.com/mileszs
 
 twitter:

@@ -182,5 +182,8 @@ Google, not a forwarder.
   Authenticate email) and publish the TXT it gives you. Without DKIM, DMARC
   passes on SPF alone, which breaks whenever mail is forwarded.
 - **Enforce HTTPS** in GitHub Pages settings is still off.
-- Once DNS is stable, `_config.yml` `url:` stays `https://www.mileszs.com` —
-  the apex redirects to it, so `www` remains canonical. No change needed.
+- **Resolved 2026-08-09: the apex is canonical, not `www`.** The GitHub Pages
+  custom domain was set to `mileszs.com` during this migration, so live traffic
+  goes `www` → 301 → apex. The repo's `CNAME` file and `_config.yml` `url:`
+  were updated to match. All three must continue to name the same host or
+  canonical tags advertise a URL that redirects.

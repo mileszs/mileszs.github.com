@@ -5,7 +5,7 @@ Guidance for Claude Code when working in this repository.
 ## What this is
 
 The personal blog of Miles Z. Sterrett. Jekyll, built and hosted by **GitHub
-Pages**, served at <https://www.mileszs.com>. Posts go back to 2008.
+Pages**, served at <https://mileszs.com>. Posts go back to 2008.
 
 ## Critical constraints
 
@@ -42,9 +42,15 @@ Files and directories starting with `.` or `_` are always ignored by Jekyll, so
 
 **Branches.** Deploys come from `main`. The old `master` branch was deleted.
 
-**`CNAME`** contains `www.mileszs.com`. Do not delete or edit it — that file is
-what binds the custom domain, and losing it takes the site off its domain. The
-workflow asserts it survives the build and fails the deploy if it does not.
+**`CNAME`** contains `mileszs.com`. Do not delete it — that file is what binds
+the custom domain, and losing it takes the site off its domain. The workflow
+asserts it survives the build and fails the deploy if it does not.
+
+**Three things must name the same host, or canonical tags point at a URL that
+redirects:** the `CNAME` file, `url:` in `_config.yml`, and the GitHub Pages
+custom domain (`gh api repos/mileszs/mileszs.github.com/pages --jq .cname`).
+All three are `mileszs.com`. The apex is canonical; `www.mileszs.com` 301s to
+it. These drifted apart once already during a DNS migration.
 
 ## Commands
 
@@ -117,7 +123,7 @@ This site is deliberately open to AI crawlers. Three files carry that:
 `_config.yml` also carries `social.links`, which becomes the `sameAs` array in
 the JSON-LD `Person`, and `logo`, which becomes the publisher logo.
 
-**`url:` in `_config.yml` must stay `https://www.mileszs.com`.** It is not
+**`url:` in `_config.yml` must stay `https://mileszs.com`.** It is not
 cosmetic — it drives canonical URLs, `og:url`, the JSON-LD, every link in
 `feed.xml`, and every entry in `sitemap.xml`. It was wrong for years and
 poisoned all of the above.
@@ -136,7 +142,7 @@ none of which surface as build errors:
 
 ```bash
 grep -c "<loc>" _site/sitemap.xml                      # sitemap still populated
-grep 'rel="canonical"' _site/about/index.html          # canonical points at www.mileszs.com
+grep 'rel="canonical"' _site/about/index.html          # canonical points at mileszs.com
 head -30 _site/llms.txt                                # Liquid actually rendered
 grep -o 'https://[^"]*' _site/feed.xml | head          # feed URLs use the real domain
 ```
