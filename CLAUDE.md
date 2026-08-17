@@ -123,6 +123,15 @@ This site is deliberately open to AI crawlers. Three files carry that:
 `_config.yml` also carries `social.links`, which becomes the `sameAs` array in
 the JSON-LD `Person`, and `logo`, which becomes the publisher logo.
 
+**There are deliberately no `twitter:*` meta tags, and removing the `twitter:`
+key from `_config.yml` is not what achieves that.** jekyll-seo-tag emits
+`twitter:card`, `twitter:image` and `twitter:title` unconditionally — only
+`twitter:site` and `twitter:creator` are gated on `site.twitter`. Deleting the
+config key alone leaves three tags behind *and* silently reverts `twitter:card`
+to `summary_large_image`. `_includes/head.html` therefore captures the `{% seo %}`
+output and filters those lines out. If you change that include, re-run
+`grep -rc 'twitter:' _site --include="*.html"` and confirm it is 0.
+
 **`url:` in `_config.yml` must stay `https://mileszs.com`.** It is not
 cosmetic — it drives canonical URLs, `og:url`, the JSON-LD, every link in
 `feed.xml`, and every entry in `sitemap.xml`. It was wrong for years and

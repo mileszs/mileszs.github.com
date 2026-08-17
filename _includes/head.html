@@ -2,7 +2,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  {% seo %}
+  {%- comment -%}
+    jekyll-seo-tag has no switch for the twitter:* meta tags. It emits
+    twitter:card, twitter:image and twitter:title unconditionally — only
+    twitter:site and twitter:creator depend on `site.twitter`, so deleting that
+    key from _config.yml is not enough (and silently reverts twitter:card to
+    summary_large_image, which misrepresents the 200x200 avatar).
+
+    Twitter attribution was removed deliberately, so filter those lines out of
+    the generated block. Nothing is lost: og:title, og:description and og:image
+    carry the same information, and that is what Slack, Discord, iMessage and
+    the rest actually read.
+
+    Matching on the attribute (`name="twitter:`) rather than the bare string
+    keeps this from eating an og:title whose content happens to say "twitter".
+  {%- endcomment -%}
+  {%- capture seo_block %}{% seo %}{% endcapture -%}
+  {%- assign newline = '
+' -%}
+  {%- assign seo_lines = seo_block | split: newline -%}
+  {%- for line in seo_lines -%}
+    {%- unless line contains 'name="twitter:' or line contains 'property="twitter:' -%}
+{{ newline }}{{ line }}
+    {%- endunless -%}
+  {%- endfor %}
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">

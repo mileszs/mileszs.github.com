@@ -3,8 +3,8 @@ permalink: /llms.txt
 sitemap: false
 ---
 {%- comment -%}
-  site.author is a mapping (name + twitter), not a string — see _config.yml.
-  Always use site.author.name; bare site.author renders the whole hash.
+  site.author is a mapping, not a string — see _config.yml. Always use
+  site.author.name; bare site.author renders the whole hash.
 {%- endcomment -%}
 # {{ site.title }} — {{ site.author.name }}
 

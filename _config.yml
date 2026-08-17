@@ -11,12 +11,11 @@
 # ---------------------------------------------------------------------------
 title: mileszs
 email: miles@mileszs.com
-# Must be a mapping, not a plain string. jekyll-seo-tag derives twitter:creator
-# from `author.twitter`, and with a bare string it falls back to the name and
-# emits the nonsense `@Miles Z. Sterrett`.
+# Kept as a mapping rather than a bare string: templates read `site.author.name`
+# (see _includes/footer.html and llms.txt), and flattening this to a string
+# would break both.
 author:
   name: Miles Z. Sterrett
-  twitter: mileszs
 description: >- # this means to ignore newlines until the next key
   The blahg/ramblings of MilesZS — Miles Z. Sterrett on software, engineering
   leadership, books, tabletop games, and whatever else has his attention.
@@ -46,15 +45,15 @@ social:
     - https://www.linkedin.com/in/mileszs/
     - https://www.goodreads.com/user/show/19490855-miles-sterrett
 
-twitter:
-  username: mileszs
-  # `summary`, not `summary_large_image`: the default sharing image is a 200x200
-  # avatar. Switch to summary_large_image if a ~1200x630 image is added.
-  card: summary
+# There is deliberately no `twitter:` key. jekyll-seo-tag emits the whole
+# twitter:* meta block only when `site.twitter` exists, so omitting it removes
+# those tags entirely. Do not add it back to influence link previews — Slack,
+# Discord and the rest fall back to the Open Graph tags below, which carry the
+# same title, description and image.
 
 # `logo` is the publisher logo in the JSON-LD blob. The default sharing image
-# (og:image / twitter:image) has to come from a `defaults` entry below, because
-# jekyll-seo-tag reads `page.image` and has no site-level fallback for it.
+# (og:image) has to come from a `defaults` entry below, because jekyll-seo-tag
+# reads `page.image` and has no site-level fallback for it.
 logo: /assets/miles-wizard.png
 
 # ---------------------------------------------------------------------------
