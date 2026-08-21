@@ -368,7 +368,7 @@ sitemap: false
   </div>
 
   <h1 class="headline" id="headline">The Fellowship Sets Out</h1>
-  <p class="subhead">Saturday, the 10th of October</p>
+  <p class="subhead">Saturday, the 10th of October &middot; nine in the morning</p>
 
   <div class="clock" id="clock">
     <div class="unit"><span class="unit-num" id="h">--</span><span class="unit-lbl">Hours</span></div>
@@ -377,8 +377,8 @@ sitemap: false
   </div>
 
   <noscript>
-    <p>The counting requires JavaScript. The marathon is Saturday, 10 October 2026;
-       the birthday is Tuesday, 13 October 2026.</p>
+    <p>The counting requires JavaScript. The marathon begins at 9:00 a.m. on
+       Saturday, 10 October 2026; the birthday is Tuesday, 13 October 2026.</p>
   </noscript>
 
   <hr class="rule">
@@ -419,12 +419,14 @@ sitemap: false
 (function () {
   "use strict";
 
-  // Local midnight — the moment the day itself arrives.
-  var MARATHON = new Date(2026, 9, 10, 0, 0, 0);
+  // Local time. The marathon has a real start time; the birthday is a whole
+  // day, so it counts to midnight.
+  var MARATHON = new Date(2026, 9, 10, 9, 0, 0);
   var BIRTHDAY = new Date(2026, 9, 13, 0, 0, 0);
 
-  // A marathon plausibly runs past midnight, so treat the day as "in progress"
-  // for a generous window rather than flipping to past the instant it starts.
+  // Once the start time passes, hold the "it's today" state for a full day
+  // rather than flipping to past the instant the first film begins — twelve
+  // hours of extended editions runs well into the night.
   var DAY = 24 * 60 * 60 * 1000;
 
   var $ = function (id) { return document.getElementById(id); };
