@@ -112,4 +112,4 @@ That said, I do think <a href="http://www.cornify.com" onclick="cornify_add();re
 
 MooTools tomorrow! I heard it combined jQuery's DOM interaction with Prototype's class stuff. In theory? Awesome! In practice? Man, I hope so.
 
-<script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+<script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>

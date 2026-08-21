@@ -5,7 +5,7 @@ date: 2008-09-09 17:22:39 UTC
 comments: true
 categories: 
 --- 
-In a comment to [Hack-svn && Ship-svn](http://soyunperdedor.com/node/31), [Yossef Mendelssohn of OG Consulting](http://bl.ogtastic.com/), suggested that my chosen workflow may not be ideal. He probably knows much better than I. Here's the (relevent portion of the) comment:
+In a comment to [Hack-svn && Ship-svn](/hack-svn-andand-ship-svn), [Yossef Mendelssohn of OG Consulting](http://bl.ogtastic.com/), suggested that my chosen workflow may not be ideal. He probably knows much better than I. Here's the (relevent portion of the) comment:
 
 > Also, about your git-svn scripts. Kevin (the third OG) was working on the same thing, even going so far as to make 'hack' and 'ship' DTRT based on whether you're in a git-svn repo or a regular git repo. In my experience, however, there's more difference between vanilla git and git-svn than just whether you git pull or git svn rebase. I've had enough troubles that I no longer dcommit from master. I always keep master as the state of the svn repo and dcommit from branches. Much fewer headaches that way.
 

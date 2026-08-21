@@ -12,7 +12,7 @@ categories:
 
 </div>
 
-Of course, converting the Rake task from [my previous post](http://soyunperdedor.com/node/27) to a Sake task was simple.
+Of course, converting the Rake task from [my previous post](/rake-rails-log-stats) to a Sake task was simple.
 
 <div class="codeblock">
 

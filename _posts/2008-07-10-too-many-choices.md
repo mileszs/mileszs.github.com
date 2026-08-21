@@ -106,7 +106,7 @@ community. In addition to that, I often learn something from people commenting
 on my blog posts. I mean, sure, sometimes what I learn is that there's a new  
 cream that is guaranteed to make my nights more exciting, but that **is**  
 
-*something*. What about [this comment](http://soyunperdedor.com/node/25 "More Neato Tools blog post") on one of my blog  
+*something*. What about [this comment](/more-neato-tools "More Neato Tools blog post") on one of my blog  
 posts? Useful. Comments are necessary.
 
 Now that we have established the indispensability of comments, how should they  
