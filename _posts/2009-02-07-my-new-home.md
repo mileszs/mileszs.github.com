@@ -9,7 +9,7 @@ I *finally* did it. I switched to a static blog, powered by [Webby](http://webby
 
 ### Git and Webby, Sitting in a Tree
 
-![](/images/kissing-squirrels-tree.jpg)
+![Two squirrels nuzzling on a branch, captioned "Yer face... it needs mai kisses"](/images/kissing-squirrels-tree.jpg)
 
 Essentially, Webby and [Git](http://git-scm.com) power this blahg. I tell Webby I want to post a new entry. When finished, I commit it and push it to the “central” repository on my server. A post-recieve hook pulls the update into the web-accessible directory. BAM\! It’s like magic.
 
@@ -59,7 +59,7 @@ I have not gotten my comments from soyunperdedor.com transferred yet. Sorry.
 
 I’ve decided to use a more obvious domain ‘mileszs.com’. (I do also own mileszs.org, and mileszs.net, which both hit soyunperdedor.com at the time of this writing. They won’t always.) While the domain soyunperdedor.com still makes me giggle a bit, it wasn’t very practical. It was difficult for some to remember, cumbersome for some to spell, and made no sense unless you either 1) know Spanish, or 2) know [Beck](http://www.last.fm/music/Beck/_/Loser).
 
-![](/images/beck-mellow-gold.jpg)
+![Cover of Beck's album Mellow Gold](/images/beck-mellow-gold.jpg)
 
 > “You know, like in that Beck song, ‘**Loser**’.” <br />“*Excuse* me?\! Screw you, too, *buddy*.”
 

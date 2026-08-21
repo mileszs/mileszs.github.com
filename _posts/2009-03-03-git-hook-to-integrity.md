@@ -11,7 +11,7 @@ If you’re hosting your own centralized git repository on your own server, you 
 
 ## Could someone spell lazy for me?
 
-![](/images/caturday-lazyday.jpg)
+![LOLcat: a tabby cat sprawled back on a sofa, captioned "is caturday . . . is lazy day."](/images/caturday-lazyday.jpg)
 
 I knew that I needed a post-receive hook that sent the right information to my installation of Integrity, but I really didn’t want to have to write one myself. Sure, it might be fun. It also might be a frustrating waste of time. So, I went to the Integrity Google Group, searched for “post receive”, and came across [this thread](http://group) s.google.com/group/integrityapp/browse\_thread/thread/895f3b6198275f6e (the same one to which I linked above). Cool\! That led to [this Gist](https://gist.github.com/669b761f47e61ec665ad) by whatcould:
 
@@ -113,6 +113,6 @@ Net::HTTP.post_form(URI.parse(POST_RECEIVE_URL), {
 `Daemons.daemonize` will shove our currently-running script to the background and let git get on with gittin’. It’s simple. It’s fast. Now, it’s **legendary**\!
 <br />
 
-![](/images/legendary-barney.jpg)
+![Mock motivational poster of Barney Stinson straightening his tie, captioned "Legendary"](/images/legendary-barney.jpg)
 
 _Image borrowed from [SoutherDesigner at DeviantArt](http://southerndesigner.deviantart.com/art/Legendary-Barney-Stinson-102733576)_

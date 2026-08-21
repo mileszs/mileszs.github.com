@@ -10,7 +10,7 @@ footer: false
 
 # About Me
 
-![](/images/my-face.png){:.inline-right} Hey. Prepare for more than you actually cared to know about me when you pressed the link to here. There's not even a reward at the end. The journey is the reward, or something. Anyway, as Samwise Gamgee says, "It’s the job that’s never started that takes the longest to finish." So let's get going.
+![Cartoon avatar of Miles: bearded, wearing dark-rimmed glasses, grinning](/images/my-face.png){:.inline-right} Hey. Prepare for more than you actually cared to know about me when you pressed the link to here. There's not even a reward at the end. The journey is the reward, or something. Anyway, as Samwise Gamgee says, "It’s the job that’s never started that takes the longest to finish." So let's get going.
 
 I enjoy helping people, writing code, and helping people write code. I am the Director of Engineering at [CareerPlug](https://www.careerplug.com), where I get to help people, write code, and help people write code that helps people. I get to help software engineers and engineering managers grow their careers and grow our product. It's a wonderful thing to watch a team grow and create and celebrate their successes!
 

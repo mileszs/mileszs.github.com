@@ -1,6 +1,11 @@
 <nav class="nav">
   <div class="nav-container">
-    <img src="/assets/miles-wizard.png" class="header-img" />
+    {%- comment -%}
+      alt="" is deliberate, not an oversight. The avatar is decorative — the
+      site title sits right beside it and is the actual link home — so an empty
+      alt tells screen readers to skip it rather than announce a filename.
+    {%- endcomment -%}
+    <img src="/assets/miles-wizard.png" class="header-img" alt="" />
     <a href="{{ site.baseurl }}/">
       <h2 class="nav-title">{{ site.title }}</h2>
     </a>

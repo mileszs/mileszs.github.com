@@ -11,35 +11,35 @@ See [here](http://www.mileszs.com/goals-for-2015/) for the utter bullshit I clai
 
 ## Read Ten Non-Fiction Books
 
-<img src="/images/reaction-drawings/smiling-reaction-faces-drawing.jpg" style="float: right;"/>[My year in books](https://www.goodreads.com/user/year_in_books/2015/19490855-miles-sterrett) was decent. I completed this one, due in no small part to subscribing to Audible. However, I said I’d read books about writing, and I read not a single one. Quite a bit of medieval history, though.
+<img src="/images/reaction-drawings/smiling-reaction-faces-drawing.jpg" style="float: right;" alt="Hand-drawn cartoon face, smiling" />[My year in books](https://www.goodreads.com/user/year_in_books/2015/19490855-miles-sterrett) was decent. I completed this one, due in no small part to subscribing to Audible. However, I said I’d read books about writing, and I read not a single one. Quite a bit of medieval history, though.
 
 ## Read Thirty Fiction Books
 
-<img src="/images/reaction-drawings/happy-reaction-faces-drawing.jpg" style="float: right;"/>Cake. Actually, I don’t like cake so much. Pie.
+<img src="/images/reaction-drawings/happy-reaction-faces-drawing.jpg" style="float: right;" alt="Hand-drawn cartoon face, grinning happily" />Cake. Actually, I don’t like cake so much. Pie.
 
 Like I said, [my year in books](https://www.goodreads.com/user/year_in_books/2015) was decent. I feel good about it, anyway.
 
 ## Use Phone Less Around Family
 
-<img src="/images/reaction-drawings/stressed-reaction-faces-drawing.jpg" style="float: right;"/>I think I did this. Having not asked, I think my wife would disagree with me. Hold on a sec, I’ll ask.
+<img src="/images/reaction-drawings/stressed-reaction-faces-drawing.jpg" style="float: right;" alt="Hand-drawn cartoon face, looking stressed" />I think I did this. Having not asked, I think my wife would disagree with me. Hold on a sec, I’ll ask.
 
 She says I did indeed quit going to my phone when we’re putting the kids to bed, but that is, from her perspective, the only phone-related improvement I made. That’s probably a fair assessment. (I wrote this part from my phone.)
 
 ## Continue to Improve Patience
 
-<img src="/images/reaction-drawings/disapprove-reaction-faces-drawing.jpg" style="float: right;"/>Work in progress. Perhaps it has improved, but I worry that’s like suggesting the weather has improved when it goes from a downpour to a mere drizzle.
+<img src="/images/reaction-drawings/disapprove-reaction-faces-drawing.jpg" style="float: right;" alt="Hand-drawn cartoon face, looking disapproving" />Work in progress. Perhaps it has improved, but I worry that’s like suggesting the weather has improved when it goes from a downpour to a mere drizzle.
 
 ## Weigh Under 200 Pounds
 
-<img src="/images/reaction-drawings/jaw-drop-reaction-faces-drawing.jpg" style="float: right;"/>I gained 15 pounds. I won’t bother haranguing you with my trials and tribulations. I ate like I expected to be starved come 2016, which will turn into a self-fulfilling prophecy.
+<img src="/images/reaction-drawings/jaw-drop-reaction-faces-drawing.jpg" style="float: right;" alt="Hand-drawn cartoon face, with its jaw dropped" />I gained 15 pounds. I won’t bother haranguing you with my trials and tribulations. I ate like I expected to be starved come 2016, which will turn into a self-fulfilling prophecy.
 
 ## Write Five Short Stories
 
-<img src="/images/reaction-drawings/crying-reaction-faces-drawing.jpg" style="float: right;"/>I wrote none. I barely wrote more blog posts than short stories I didn’t write. [My buddy Tyler](http://www.tylermoore.website/blog/other/2015/12/18/what-held-you-back-this-year.html), though… that guy is really doing it. Proud of that guy. I am looking to his example as inspiration for getting more organized, whether I do pursue the short story thing or not.
+<img src="/images/reaction-drawings/crying-reaction-faces-drawing.jpg" style="float: right;" alt="Hand-drawn cartoon face, crying" />I wrote none. I barely wrote more blog posts than short stories I didn’t write. [My buddy Tyler](http://www.tylermoore.website/blog/other/2015/12/18/what-held-you-back-this-year.html), though… that guy is really doing it. Proud of that guy. I am looking to his example as inspiration for getting more organized, whether I do pursue the short story thing or not.
 
 ## Miscellaneous: Backpacking
 
-<img src="/images/reaction-drawings/angry-reaction-faces-drawing.jpg" style="float: right;"/>Nope. I scheduled a weekend for May 2016. It’s on the calendar.
+<img src="/images/reaction-drawings/angry-reaction-faces-drawing.jpg" style="float: right;" alt="Hand-drawn cartoon face, looking angry" />Nope. I scheduled a weekend for May 2016. It’s on the calendar.
 
 <br style="clear: both;" />
 
