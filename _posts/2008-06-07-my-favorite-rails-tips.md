@@ -7,7 +7,7 @@ categories:
 --- 
 <div class="centerize">
 
-![screwdriver drill bit tips](http://soyunperdedor.com/files/drill_bit_tips.jpg "Photo By Dion Gillard")  
+![screwdriver drill bit tips](/images/drill_bit_tips.jpg "Photo By Dion Gillard")  
 [Photo By Dion Gillard](http://www.flickr.com/photos/diongillard/ "Photo By Dion Gillard")
 
 </div>

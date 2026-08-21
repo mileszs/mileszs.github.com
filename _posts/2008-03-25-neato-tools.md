@@ -17,7 +17,7 @@ The Ruby Gem [Wirble](http://pablotron.org/software/wirble/) is so awesome yet s
 
 <div class="centerize">
 
-![Wirble\!](http://soyunperdedor.com/files/wirble-0.png "Wirble!")
+![Wirble\!](/images/wirble-0.png "Wirble!")
 
 </div>
 

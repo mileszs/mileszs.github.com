@@ -105,7 +105,7 @@ For now, I've got a very simple report. It looks like this:
 
 <div class="centerize">
 
-![Screenshot of Weight Report](http://soyunperdedor.com/files/sparklines_weight_tracker.png "I know, I'm ugly!  I was not designed by someone who knows anything about design!")
+![Screenshot of Weight Report](/images/sparklines_weight_tracker.png "I know, I'm ugly!  I was not designed by someone who knows anything about design!")
 
 </div>
 

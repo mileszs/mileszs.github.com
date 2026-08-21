@@ -7,7 +7,7 @@ categories:
 --- 
 <div class="centerize">
 
-![Thor Action Figure](http://soyunperdedor.com/files/thor.jpg "Thor and Mjolnir!")  
+![Thor Action Figure](/images/thor.jpg "Thor and Mjolnir!")  
 [Photo By Ben Northern](http://www.flickr.com/photos/bnorthern/)
 
 </div>

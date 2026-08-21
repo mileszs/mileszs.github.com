@@ -5,7 +5,7 @@ date: 2008-07-10 01:54:10 UTC
 comments: true
 categories: 
 --- 
-![Stack of Logs](http://soyunperdedor.com/files/nerd_glasses.jpg "I love my nerd glasses!")  
+![Stack of Logs](/images/nerd_glasses.jpg "I love my nerd glasses!")  
 [Photo By Tomotaka](http://www.flickr.com/photos/world9-1/)
 
 I have spent a silly amount of time lately contemplating what I want in a  

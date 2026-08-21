@@ -15,7 +15,7 @@ There are several other blogs, wikis, and how-to sites that present all of the i
 
 Rebuilding a slice is the easiest part. Seriously. You just click the 'Rebuild' link (so intuitive\!) and you are presented with this screen:
 
-![Screenshot of Slicehost Manager rebuild screen](http://soyunperdedor.comfiles/slicehost_rebuild.png "It's simple to rebuild a slice with this interface")
+![Screenshot of Slicehost Manager rebuild screen](/images/slicehost_rebuild.png "It's simple to rebuild a slice with this interface")
 
 Choose an operating system. Choices include Arch, CentOS, Fedora, Gentoo, Debian, and both Ubuntu 6.06 and 7.10. Ubuntu 6.06 is the long-term support version; in other words, it is considered very, very stable. Ubuntu 7.10 is the newest release of Ubuntu, and is the operating system that I chose here.
 

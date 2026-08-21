@@ -33,7 +33,7 @@ Internet Explorer 8 [passes Acid2](http://blogs.msdn.com/ie/archive/2007/12/19/i
 
 <div class="centerize">
 
-![Screenshot of IE8 Download page](http://soyunperdedor.com/files/ie8_reqs.png "This is why I hate you")
+![Screenshot of IE8 Download page](/images/ie8_reqs.png "This is why I hate you")
 
 </div>
 

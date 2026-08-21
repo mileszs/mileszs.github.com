@@ -11,7 +11,7 @@ categories:
 
 [StripeGenerator.com](http://stripegenerator.com/) does just what it sounds like it might do: it generates stripes. To be less vague, it generates small PNG files that can be used as tiled backgrounds on a website (or whatever application you may find). It can be a quick and easy interface for getting a quick, decent looking background for your website, without knowing a damned thing about Photoshop or GIMP. I actually discovered it while looking for a how-to on creating that sort of background for [BikesOfIndy.com](http://bikesofindy.com/). I am no designer, so any help in that area is appreciated.
 
-[![Screenshot of StripesGenerator.com Interface](http://soyunperdedor.comfiles/stripesgenerator_screen.png "The UI looks daunting at first glance")](http://stripegenerator.com/)
+[![Screenshot of StripesGenerator.com Interface](/images/stripesgenerator_screen.png "The UI looks daunting at first glance")](http://stripegenerator.com/)
 
 The interface, initially, can be a bit intimidating. At first glance, one might think it not super-intuitive. However, I have found it to be pretty easy, once you figure a few things out. You should be able to learn a lot just by playing with it. Really, you can get a useful background image by merely choosing a stripe color and then downloading the image\!
 

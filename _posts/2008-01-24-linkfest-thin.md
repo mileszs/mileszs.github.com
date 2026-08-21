@@ -31,7 +31,7 @@ The pretty benchmark:
 
 <div class="centerize">
 
-![](http://soyunperdedor.com/files/linkfest_thin_chart.png)
+![](/images/linkfest_thin_chart.png)
 
 </div>
 

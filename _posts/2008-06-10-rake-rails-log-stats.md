@@ -7,7 +7,7 @@ categories:
 --- 
 <div class="centerize">
 
-![Stack of Logs](http://soyunperdedor.com/files/logs.jpg "Logs!  Everywhere!")  
+![Stack of Logs](/images/logs.jpg "Logs!  Everywhere!")  
 [Photo By mer de glace](http://flickr.com/photos/marts-pics)
 
 </div>
