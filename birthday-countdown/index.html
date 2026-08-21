@@ -1,0 +1,499 @@
+---
+permalink: /birthday-countdown/
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Deliberately kept out of search results. `sitemap: false` in the front
+     matter above keeps it out of sitemap.xml, and nothing on the site links
+     here. This meta tag is the directive crawlers actually obey; note that it
+     only works if they are ALLOWED to fetch the page, which is why there is no
+     matching Disallow in robots.txt. -->
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>The Road Goes Ever On</title>
+
+<style>
+  :root {
+    --ink: #0a0806;
+    --ink-2: #14100b;
+    --parchment: #d9c9a8;
+    --parchment-dim: #8d8069;
+    --gold: #e8c14a;
+    --gold-deep: #b8912c;
+    --ember: #ff6b1a;
+    --ember-hot: #ff3d00;
+    --ember-deep: #a32d05;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--ink);
+    color: var(--parchment);
+  }
+
+  body {
+    font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman", serif;
+    min-height: 100vh;
+    padding: 3rem 1.25rem 4rem;
+    text-align: center;
+    background:
+      radial-gradient(ellipse 80% 55% at 50% 22%, rgba(255, 107, 26, 0.11), transparent 70%),
+      radial-gradient(ellipse 60% 45% at 50% 100%, rgba(184, 145, 44, 0.07), transparent 70%),
+      linear-gradient(180deg, var(--ink) 0%, var(--ink-2) 55%, var(--ink) 100%);
+    background-attachment: fixed;
+  }
+
+  .wrap { max-width: 820px; margin: 0 auto; }
+
+  .eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: var(--parchment-dim);
+    margin: 0 0 2.75rem;
+    text-indent: 0.42em;
+  }
+
+  /* ---------- The Ring ---------- */
+
+  .ring-stage {
+    position: relative;
+    width: min(370px, 88vw);
+    aspect-ratio: 1;
+    margin: 0 auto 0.5rem;
+    display: grid;
+    place-items: center;
+  }
+
+  .ring-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+  .inscription {
+    font-size: 15px;
+    letter-spacing: 3px;
+    fill: var(--ember);
+    opacity: 0.85;
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+  }
+
+  /* The English gloss sits under the band, quieter than the Black Speech. */
+  .inscription-gloss {
+    font-size: 11.5px;
+    letter-spacing: 2.4px;
+    fill: var(--gold-deep);
+    opacity: 0.62;
+    font-style: normal;
+  }
+
+  .ring-band { fill: none; stroke: url(#goldBand); stroke-width: 2.5; opacity: 0.9; }
+  .ring-glow { fill: none; stroke: var(--ember); stroke-width: 9; opacity: 0.13; filter: blur(7px); }
+
+  .ring-core { position: relative; z-index: 2; }
+
+  .days {
+    display: block;
+    font-size: clamp(4.6rem, 20vw, 9rem);
+    line-height: 0.86;
+    font-weight: 700;
+    color: #ffd9a8;
+    text-shadow:
+      0 0 10px rgba(255, 140, 40, 0.9),
+      0 0 34px rgba(255, 80, 10, 0.62),
+      0 0 78px rgba(255, 60, 0, 0.34);
+    animation: flicker 5.5s ease-in-out infinite;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .days-label {
+    display: block;
+    margin-top: 0.55rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--ember);
+    opacity: 0.88;
+    text-indent: 0.4em;
+  }
+
+  @keyframes flicker {
+    0%, 100% { opacity: 1; }
+    45%      { opacity: 0.93; }
+    70%      { opacity: 0.99; }
+  }
+
+  /* ---------- Primary event ---------- */
+
+  .headline {
+    font-size: clamp(1.35rem, 4.6vw, 2rem);
+    margin: 1.5rem 0 0.3rem;
+    color: var(--gold);
+    letter-spacing: 0.03em;
+  }
+
+  .subhead {
+    margin: 0 0 2rem;
+    color: var(--parchment-dim);
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  .clock {
+    display: flex;
+    justify-content: center;
+    gap: clamp(0.9rem, 4.5vw, 2.4rem);
+    margin: 0 0 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  .unit { min-width: 3.6rem; }
+
+  .unit-num {
+    display: block;
+    font-size: clamp(1.9rem, 7vw, 2.9rem);
+    line-height: 1;
+    color: #ffc98a;
+    font-variant-numeric: tabular-nums;
+    text-shadow: 0 0 16px rgba(255, 110, 25, 0.45);
+  }
+
+  .unit-lbl {
+    display: block;
+    margin-top: 0.45rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--parchment-dim);
+    text-indent: 0.26em;
+  }
+
+  /* Kicks in inside the final week. */
+  body.urgent .days { animation: flicker 2.4s ease-in-out infinite, throb 1.9s ease-in-out infinite; }
+  @keyframes throb {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.045); }
+  }
+
+  /* ---------- Divider ---------- */
+
+  .rule {
+    border: 0;
+    height: 1px;
+    width: min(340px, 74%);
+    margin: 3.2rem auto;
+    background: linear-gradient(90deg, transparent, rgba(184, 145, 44, 0.55), transparent);
+  }
+
+  /* ---------- Secondary event ---------- */
+
+  .second {
+    color: var(--parchment);
+  }
+
+  .second-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: var(--parchment-dim);
+    margin: 0 0 0.9rem;
+    text-indent: 0.34em;
+  }
+
+  .second-num {
+    font-size: clamp(2.5rem, 9vw, 3.6rem);
+    color: var(--gold);
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+    text-shadow: 0 0 22px rgba(232, 193, 74, 0.32);
+  }
+
+  .second-sub {
+    margin: 0.8rem 0 0;
+    color: var(--parchment-dim);
+    font-style: italic;
+  }
+
+  /* ---------- The films ---------- */
+
+  .films {
+    margin: 3.4rem auto 0;
+    max-width: 560px;
+    text-align: left;
+    border: 1px solid rgba(184, 145, 44, 0.22);
+    border-radius: 3px;
+    padding: 1.6rem 1.5rem 1.3rem;
+    background: rgba(255, 200, 120, 0.022);
+  }
+
+  .films h2 {
+    margin: 0 0 1.15rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+    text-align: center;
+    font-weight: 400;
+    text-indent: 0.34em;
+  }
+
+  /* The runtime columns are nowrap, so on a narrow screen the table would push
+     the whole page wider than the viewport. Let it scroll inside its own box
+     instead — the body must never scroll sideways. */
+  .films-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  .films table { width: 100%; border-collapse: collapse; font-size: 0.95rem; min-width: 19rem; }
+  .films th {
+    font-weight: 400;
+    font-size: 0.6rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--parchment-dim);
+    text-align: right;
+    padding-bottom: 0.6rem;
+  }
+  .films th:first-child { text-align: left; }
+  .films td { padding: 0.4rem 0; border-top: 1px solid rgba(184, 145, 44, 0.11); }
+  .films td:not(:first-child) {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    color: var(--parchment-dim);
+    padding-left: 1rem;
+    white-space: nowrap;
+  }
+  .films tr.total td {
+    border-top: 1px solid rgba(184, 145, 44, 0.32);
+    padding-top: 0.7rem;
+    color: var(--gold);
+    font-style: italic;
+  }
+  .films tr.total td:not(:first-child) { color: var(--gold); }
+
+  /* ---------- Footer ---------- */
+
+  .quote {
+    margin: 3.4rem auto 0;
+    max-width: 30rem;
+    font-style: italic;
+    color: var(--parchment-dim);
+    line-height: 1.65;
+    font-size: 0.97rem;
+  }
+
+  .quote cite {
+    display: block;
+    margin-top: 0.7rem;
+    font-style: normal;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    opacity: 0.72;
+  }
+
+  .arrived {
+    color: var(--gold);
+    font-size: clamp(1.5rem, 5.5vw, 2.3rem);
+    line-height: 1.3;
+  }
+
+  noscript p {
+    color: var(--gold);
+    border: 1px solid rgba(184, 145, 44, 0.3);
+    padding: 1rem;
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 480px) {
+    body { padding: 2rem 1rem 3rem; }
+    .eyebrow { letter-spacing: 0.2em; font-size: 0.68rem; text-indent: 0.2em; margin-bottom: 2rem; }
+    .films { padding: 1.3rem 1rem 1rem; }
+    .films table { font-size: 0.86rem; }
+    .films td:not(:first-child) { padding-left: 0.7rem; }
+    .quote { font-size: 0.92rem; }
+    .clock { gap: 1.1rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .days, body.urgent .days { animation: none; }
+    * { transition: none !important; }
+  }
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <p class="eyebrow">One Ring &middot; Three Films &middot; One Saturday</p>
+
+  <div class="ring-stage">
+    <svg class="ring-svg" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="goldBand" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%"   stop-color="#8a6b1f"/>
+          <stop offset="35%"  stop-color="#e8c14a"/>
+          <stop offset="65%"  stop-color="#b8912c"/>
+          <stop offset="100%" stop-color="#7d5f1a"/>
+        </linearGradient>
+        <!-- Two half-arcs rather than one full circle: text on a closed circle
+             runs upside down across the bottom, which reads as a bug. Top arc
+             sweeps over the crown, bottom arc sweeps under so it stays upright. -->
+        <path id="arcTop"    d="M 48,200 A 152,152 0 0,1 352,200"/>
+        <path id="arcBottom" d="M 50,200 A 150,150 0 0,0 350,200"/>
+      </defs>
+      <circle class="ring-glow" cx="200" cy="200" r="152"/>
+      <circle class="ring-band" cx="200" cy="200" r="164"/>
+      <circle class="ring-band" cx="200" cy="200" r="140"/>
+      <text class="inscription">
+        <textPath href="#arcTop" startOffset="50%" text-anchor="middle">
+          Ash nazg durbatul&ucirc;k
+        </textPath>
+      </text>
+      <text class="inscription inscription-gloss">
+        <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">
+          One Ring to rule them all
+        </textPath>
+      </text>
+    </svg>
+
+    <div class="ring-core">
+      <span class="days" id="days">&mdash;</span>
+      <span class="days-label" id="daysLabel">Days Remaining</span>
+    </div>
+  </div>
+
+  <h1 class="headline" id="headline">The Fellowship Sets Out</h1>
+  <p class="subhead">Saturday, the 10th of October</p>
+
+  <div class="clock" id="clock">
+    <div class="unit"><span class="unit-num" id="h">--</span><span class="unit-lbl">Hours</span></div>
+    <div class="unit"><span class="unit-num" id="m">--</span><span class="unit-lbl">Minutes</span></div>
+    <div class="unit"><span class="unit-num" id="s">--</span><span class="unit-lbl">Seconds</span></div>
+  </div>
+
+  <noscript>
+    <p>The counting requires JavaScript. The marathon is Saturday, 10 October 2026;
+       the birthday is Tuesday, 13 October 2026.</p>
+  </noscript>
+
+  <hr class="rule">
+
+  <div class="second">
+    <p class="second-label">And the birthday itself</p>
+    <div class="second-num" id="bdayNum">&mdash;</div>
+    <p class="second-sub" id="bdaySub">Tuesday, the 13th of October</p>
+  </div>
+
+  <section class="films">
+    <h2>The Road Ahead</h2>
+    <div class="films-scroll">
+    <table>
+      <thead>
+        <tr><th>&nbsp;</th><th>Extended</th><th>Theatrical</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>The Fellowship of the Ring</td><td>3h 48m</td><td>2h 58m</td></tr>
+        <tr><td>The Two Towers</td><td>3h 55m</td><td>2h 59m</td></tr>
+        <tr><td>The Return of the King</td><td>4h 23m</td><td>3h 21m</td></tr>
+        <tr class="total"><td>All of it</td><td>12h 06m</td><td>9h 18m</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <blockquote class="quote">
+    &ldquo;It&rsquo;s a dangerous business, Frodo, going out your door. You step onto
+    the road, and if you don&rsquo;t keep your feet, there&rsquo;s no knowing where
+    you might be swept off to.&rdquo;
+    <cite>Bilbo Baggins</cite>
+  </blockquote>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // Local midnight — the moment the day itself arrives.
+  var MARATHON = new Date(2026, 9, 10, 0, 0, 0);
+  var BIRTHDAY = new Date(2026, 9, 13, 0, 0, 0);
+
+  // A marathon plausibly runs past midnight, so treat the day as "in progress"
+  // for a generous window rather than flipping to past the instant it starts.
+  var DAY = 24 * 60 * 60 * 1000;
+
+  var $ = function (id) { return document.getElementById(id); };
+  var pad = function (n) { return n < 10 ? "0" + n : String(n); };
+
+  var elDays     = $("days");
+  var elDaysLbl  = $("daysLabel");
+  var elHead     = $("headline");
+  var elClock    = $("clock");
+  var elH        = $("h");
+  var elM        = $("m");
+  var elS        = $("s");
+  var elBdayNum  = $("bdayNum");
+  var elBdaySub  = $("bdaySub");
+
+  function tick() {
+    var now = new Date();
+
+    // ---- Primary: the marathon ----
+    var diff = MARATHON - now;
+
+    if (diff > 0) {
+      var d = Math.floor(diff / DAY);
+      var h = Math.floor((diff % DAY) / 3600000);
+      var m = Math.floor((diff % 3600000) / 60000);
+      var s = Math.floor((diff % 60000) / 1000);
+
+      elDays.textContent = d;
+      elDaysLbl.textContent = d === 1 ? "Day Remaining" : "Days Remaining";
+      elH.textContent = pad(h);
+      elM.textContent = pad(m);
+      elS.textContent = pad(s);
+
+      document.body.classList.toggle("urgent", d < 7);
+    } else if (diff > -DAY) {
+      elDays.textContent = "0";
+      elDaysLbl.textContent = "It Is Today";
+      elHead.innerHTML = "The Fellowship Rides &mdash; Today!";
+      elClock.innerHTML = '<p class="arrived">Draw the curtains. Start the fire. Press play.</p>';
+      document.body.classList.add("urgent");
+    } else {
+      elDays.textContent = "✓";
+      elDaysLbl.textContent = "The Tale Is Told";
+      elHead.textContent = "And They All Went Home";
+      elClock.innerHTML = '<p class="arrived">Three films. One Saturday. Well done.</p>';
+      document.body.classList.remove("urgent");
+    }
+
+    // ---- Secondary: the birthday ----
+    var bdiff = BIRTHDAY - now;
+
+    if (bdiff > 0) {
+      var bd = Math.floor(bdiff / DAY);
+      var bh = Math.floor((bdiff % DAY) / 3600000);
+      elBdayNum.textContent = bd + (bd === 1 ? " day" : " days");
+      elBdaySub.textContent = "Tuesday, the 13th of October — and " + bh +
+        (bh === 1 ? " hour" : " hours");
+    } else if (bdiff > -DAY) {
+      elBdayNum.textContent = "Today";
+      elBdaySub.textContent = "Many happy returns, Mr. Sterrett.";
+    } else {
+      elBdayNum.textContent = "✓";
+      elBdaySub.textContent = "Another year in the Shire.";
+    }
+  }
+
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+</body>
+</html>
